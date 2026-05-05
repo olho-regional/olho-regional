@@ -1,0 +1,27 @@
+// Global styles
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+// Consistent link styling across the site
+a {
+  color: #37474f;
+  text-decoration: underline;
+  text-decoration-color: rgba(21, 101, 192, 0.35);
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.2s ease, color 0.2s ease;
+  font-weight: 500;
+
+  &:hover {
+    color: #1565C0;
+    text-decoration-color: #1565C0;
+  }
+}
+
+// Serif font for all page headings (newspaper aesthetic)
+// Override Vuetify's text-h* classes which set font-family: Roboto
+h1, h2, h3,
+.text-h3, .text-h4, .text-h5 {
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif !important;
+}

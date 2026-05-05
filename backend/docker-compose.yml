@@ -1,0 +1,32 @@
+services:
+  sqld:
+    build: .
+    restart: unless-stopped
+    user: "root"
+    expose:
+      - "8080"
+    volumes:
+      - sqld-data:/var/lib/sqld
+      - ./jwt-public.pem:/etc/sqld/jwt-public.pem:ro
+    environment:
+      - SQLD_AUTH_JWT_KEY_FILE=/etc/sqld/jwt-public.pem
+
+  caddy:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    ports:
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - ./certs:/etc/caddy/certs:ro
+      - caddy-data:/data
+      - caddy-config:/config
+    environment:
+      - DOMAIN=${DOMAIN}
+    depends_on:
+      - sqld
+
+volumes:
+  sqld-data:
+  caddy-data:
+  caddy-config:

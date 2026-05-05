@@ -1,0 +1,10 @@
+name = "olho-regional"
+compatibility_date = "2025-01-01"
+pages_build_output_dir = "dist"
+
+[vars]
+VPS_DATABASE_URL = "https://olho-regional.lubina.org"
+TURSO_DATABASE_URL = "libsql://olho-regional-mira.aws-eu-west-1.turso.io"
+
+# VPS_AUTH_TOKEN → add as a Secret in CF Pages dashboard (encrypted, not in wrangler.toml)
+# TURSO_AUTH_TOKEN → add as a Secret in CF Pages dashboard (encrypted, not in wrangler.toml)

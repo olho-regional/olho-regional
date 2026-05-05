@@ -1,0 +1,20 @@
+*.jsonl
+__pycache__
+*.zip
+*.DS_Store
+*/data/*
+*.db
+.wrangler/*
+*.db-shm
+*.db-wal
+backend/.env
+backend/certs/
+backend/jwt-private.pem
+backend/jwt-public.pem
+processamento/identificar-jornais
+
+
+
+# temp TODO
+README.md
+*ongoing.md

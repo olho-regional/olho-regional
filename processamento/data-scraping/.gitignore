@@ -1,0 +1,10 @@
+# Output data
+data/
+*.log
+PLAN.md
+.env
+jornais regionais*
+status-jornais.csv
+
+__pycache__/
+jornais.csv

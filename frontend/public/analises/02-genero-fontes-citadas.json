@@ -1,0 +1,139 @@
+{
+  "id": "genero-fontes-citadas",
+  "title": "Desequilíbrio de Género nas Fontes",
+  "description": "Análise da representação de género nas fontes citadas pela imprensa regional portuguesa.",
+  "backgroundColor": "#fce4ec",
+  "filters": {},
+  "steps": [
+    {
+      "id": "intro",
+      "type": "text",
+      "title": "Contexto",
+      "text": "Tendo acesso a notícias de todo o país, podemos investigar como os diferentes jornais regionais usam especialistas e fontes, especificamente qual o género dos nomes das pessoas citadas, em busca de padrões e desiquilíbrios. \n\nNesta análise, utilizamos uma deteção automática de género nas citações para medir a representação ao longo do tempo, entre regiões, e entre jornais."
+    },
+    {
+      "id": "exemplos",
+      "type": "text",
+      "title": "Como extraímos as citações",
+      "text": "Utilizamos processamento de linguagem natural para identificar automaticamente quem é citado em cada artigo e classificar o género do nome. Eis alguns exemplos:\n\n<div class=\"examples-grid mt-4\"><div class=\"example-card pa-3 rounded border mb-3\"><div class=\"text-caption text-medium-emphasis mb-1\">Cidade do Porto</div><div class=\"text-body-2\">«<span style=\"display:inline-flex;align-items:center;background:#1565C0;color:#fff;border-radius:16px;padding:2px 10px 2px 6px;font-size:13px;vertical-align:middle\"><svg style=\"width:14px;height:14px;margin-right:4px\" viewBox=\"0 0 24 24\"><path fill=\"currentColor\" d=\"M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z\"/></svg>Rui Moreira</span> lembra que isso implica &ldquo;criar acessibilidades, infraestruturas, escolas&rdquo; para receber quem trabalha e estuda no Porto.»</div></div><div class=\"example-card pa-3 rounded border mb-3\"><div class=\"text-caption text-medium-emphasis mb-1\">Campeão das Províncias</div><div class=\"text-body-2\">«<span style=\"display:inline-flex;align-items:center;background:#E65100;color:#fff;border-radius:16px;padding:2px 10px 2px 6px;font-size:13px;vertical-align:middle\"><svg style=\"width:14px;height:14px;margin-right:4px\" viewBox=\"0 0 24 24\"><path fill=\"currentColor\" d=\"M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z\"/></svg>Ana Abrunhosa</span> [...] diz que conhece bem &ldquo;cada canto do distrito&rdquo; de Coimbra e está identificada com os problemas.»</div></div></div>"
+    },
+    {
+      "id": "distribuicao-global",
+      "type": "split",
+      "layout": "viz-right",
+      "title": "Distribuição global",
+      "text": "No total de todas as citações identificadas na imprensa regional, a proporção de fontes masculinas é esmagadoramente superior à feminina. Esta é a fotografia global do desequilíbrio.",
+      "viz": {
+        "type": "gender-pie",
+        "caption": "Proporção global de citações por género"
+      }
+    },
+    {
+      "id": "evolucao",
+      "type": "split",
+      "layout": "viz-left",
+      "title": "Evolução temporal",
+      "text": "Ao visualizar a distribuição anual percebe-se que a disparidade é constante nos últimos 30 anos, com uma ligeira tendência de aproximação. Nos últimos 10 anos (2016–2025), a proporção feminina subiu de ~19% para ~24%, um ganho médio de +0,6 pontos percentuais por ano.\n\nA este ritmo, seriam necessários cerca de <strong>41 anos</strong> (até ~2066) para atingir a paridade de 50%. A evolução existe, mas é extremamente lenta.",
+      "viz": {
+        "type": "gender",
+        "caption": "Proporção de citações por género ao longo do tempo"
+      }
+    },
+    {
+      "id": "evolucao-sem-top",
+      "type": "split",
+      "layout": "viz-left",
+      "title": "Evolução excluindo os 500 mais citados",
+      "text": "As figuras públicas mais mediáticas (autarcas, políticos) são maioritariamente homens e distorcem as proporções globais. Se excluirmos as 500 pessoas mais citadas, a proporção feminina sobe para ~32% em 2025 (vs. ~24% no total).\n\nNeste cenário, com este ritmo de crescimento seriam necessários cerca de <strong>25 anos</strong> (até ~2050) para atingir a paridade.",
+      "viz": {
+        "type": "gender",
+        "exclude_top": 500,
+        "caption": "Proporção de género excluindo as 500 pessoas mais citadas"
+      }
+    },
+    {
+      "id": "geografia",
+      "type": "split",
+      "layout": "viz-right",
+      "title": "Variação geográfica ao longo do tempo",
+      "text": "Existem diferenças regionais na representação de género? Usa o botão de play para ver a evolução ano a ano da distribuição de citações masculinas e femininas por distrito.",
+      "viz": {
+        "type": "map-comparison",
+        "animated": true,
+        "hues": [
+          210,
+          15
+        ],
+        "caption": "Citações por distrito — Masculino (azul) vs. Feminino (laranja)",
+        "series": [
+          {
+            "label": "Masculino",
+            "params": {
+              "gender": "M"
+            }
+          },
+          {
+            "label": "Feminino",
+            "params": {
+              "gender": "F"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "jornais-genero",
+      "type": "side-by-side",
+      "title": "Top 10 jornais por género de citações",
+      "text": "Quais os jornais que mais citam fontes masculinas e femininas? As barras mostram a proporção relativa M/F em cada jornal. \n\nRelembramos que estas micro-análises são suscetíveis a distorções por causa do volume de citações, por exemplo: um jornal com poucas notícias ou poucas citações detetadas pode ter uma proporção muito desiquilibrada por não ser representativa.",
+      "vizzes": [
+        {
+          "type": "gender-jornais",
+          "gender": "M",
+          "caption": "Top 10 — mais citações masculinas"
+        },
+        {
+          "type": "gender-jornais",
+          "gender": "F",
+          "caption": "Top 10 — mais citações femininas"
+        }
+      ]
+    },
+    {
+      "id": "top-speakers",
+      "type": "side-by-side",
+      "title": "Pessoas mais citadas por género",
+      "text": "Quem são as vozes mais presentes na imprensa regional? Os 10 homens e as 10 mulheres mais frequentemente citados. \n\nRelembramos que estas micro-análises são suscetíveis a distorções como as resultantes de dado jornal referir muito regularmente a mesma pessoa, ou pelo nosso processamento não incluir desambiguação de homónimos, como 'Marta Temido' vs 'Ministra da Saúde'.",
+      "vizzes": [
+        {
+          "type": "gender-speakers",
+          "gender": "M",
+          "caption": "Top 10 homens mais citados"
+        },
+        {
+          "type": "gender-speakers",
+          "gender": "F",
+          "caption": "Top 10 mulheres mais citadas"
+        }
+      ]
+    },
+    {
+      "id": "por-tema",
+      "type": "split",
+      "layout": "viz-bottom",
+      "title": "Género por palavras-chave",
+      "text": "Se escolhermos determinadas palavras conseguimos ainda ver a variação no desequilíbrio de género. Aqui podemos explorar a evolução temporal para notícias que contenham determinadas palavras-chave, focando nos últimos 10 anos (2015–2026). Seleciona as palavras-chave para ver os resultados.",
+      "viz": {
+        "type": "gender-keywords",
+        "keywords": ["futebol OU desporto", "maquilhagem OU roupa", "casamento", "política", "filhos OU crianças OU educar", "igualdade OU equidade OU paridade"],
+        "caption": "Proporção M/F em notícias com a palavra selecionada (2015–2026)"
+      }
+    },
+    {
+      "id": "conclusao",
+      "type": "text",
+      "title": "Conclusão",
+      "text": "Apesar desta análise se limitar à metodologia e processamentos automáticos do projeto, o padrão emergente de  desequilíbrio na representação de género nas fontes citadas pela imprensa regional é claro: a predominância masculina é transversal ao longo do tempo."
+    }
+  ]
+}

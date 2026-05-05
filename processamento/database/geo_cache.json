@@ -1,0 +1,2307 @@
+{
+  "distritos": {
+    "01": {
+      "nome": "Aveiro",
+      "codigoine": "01",
+      "regiao": "Centro"
+    },
+    "02": {
+      "nome": "Beja",
+      "codigoine": "02",
+      "regiao": "Alentejo"
+    },
+    "03": {
+      "nome": "Braga",
+      "codigoine": "03",
+      "regiao": "Norte"
+    },
+    "04": {
+      "nome": "Bragança",
+      "codigoine": "04",
+      "regiao": "Norte"
+    },
+    "05": {
+      "nome": "Castelo Branco",
+      "codigoine": "05",
+      "regiao": "Centro"
+    },
+    "06": {
+      "nome": "Coimbra",
+      "codigoine": "06",
+      "regiao": "Centro"
+    },
+    "08": {
+      "nome": "Faro",
+      "codigoine": "08",
+      "regiao": "Algarve"
+    },
+    "09": {
+      "nome": "Guarda",
+      "codigoine": "09",
+      "regiao": "Centro"
+    },
+    "48": {
+      "nome": "Ilha Das Flores",
+      "codigoine": "48",
+      "regiao": "Região Autónoma dos Açores"
+    },
+    "43": {
+      "nome": "Ilha Terceira",
+      "codigoine": "43",
+      "regiao": "Região Autónoma dos Açores"
+    },
+    "44": {
+      "nome": "Ilha da Graciosa",
+      "codigoine": "44",
+      "regiao": "Região Autónoma dos Açores"
+    },
+    "31": {
+      "nome": "Ilha da Madeira",
+      "codigoine": "31",
+      "regiao": "Região Autónoma da Madeira"
+    },
+    "32": {
+      "nome": "Ilha de Porto Santo",
+      "codigoine": "32",
+      "regiao": "Região Autónoma da Madeira"
+    },
+    "41": {
+      "nome": "Ilha de Santa Maria",
+      "codigoine": "41",
+      "regiao": "Região Autónoma dos Açores"
+    },
+    "45": {
+      "nome": "Ilha de São Jorge",
+      "codigoine": "45",
+      "regiao": "Região Autónoma dos Açores"
+    },
+    "42": {
+      "nome": "Ilha de São Miguel",
+      "codigoine": "42",
+      "regiao": "Região Autónoma dos Açores"
+    },
+    "49": {
+      "nome": "Ilha do Corvo",
+      "codigoine": "49",
+      "regiao": "Região Autónoma dos Açores"
+    },
+    "47": {
+      "nome": "Ilha do Faial",
+      "codigoine": "47",
+      "regiao": "Região Autónoma dos Açores"
+    },
+    "46": {
+      "nome": "Ilha do Pico",
+      "codigoine": "46",
+      "regiao": "Região Autónoma dos Açores"
+    },
+    "10": {
+      "nome": "Leiria",
+      "codigoine": "10",
+      "regiao": "Centro"
+    },
+    "11": {
+      "nome": "Lisboa",
+      "codigoine": "11",
+      "regiao": "Área Metropolitana de Lisboa"
+    },
+    "12": {
+      "nome": "Portalegre",
+      "codigoine": "12",
+      "regiao": "Alentejo"
+    },
+    "13": {
+      "nome": "Porto",
+      "codigoine": "13",
+      "regiao": "Norte"
+    },
+    "14": {
+      "nome": "Santarém",
+      "codigoine": "14",
+      "regiao": "Alentejo"
+    },
+    "15": {
+      "nome": "Setúbal",
+      "codigoine": "15",
+      "regiao": "Área Metropolitana de Lisboa"
+    },
+    "16": {
+      "nome": "Viana do Castelo",
+      "codigoine": "16",
+      "regiao": "Norte"
+    },
+    "17": {
+      "nome": "Vila Real",
+      "codigoine": "17",
+      "regiao": "Norte"
+    },
+    "18": {
+      "nome": "Viseu",
+      "codigoine": "18",
+      "regiao": "Centro"
+    },
+    "07": {
+      "nome": "Évora",
+      "codigoine": "07",
+      "regiao": "Alentejo"
+    }
+  },
+  "municipios": {
+    "águeda": {
+      "nome": "Águeda",
+      "codigoine": "0101",
+      "distrito_code": "01",
+      "distrito": "Aveiro",
+      "regiao": "Centro"
+    },
+    "albergaria-a-velha": {
+      "nome": "Albergaria-a-velha",
+      "codigoine": "0102",
+      "distrito_code": "01",
+      "distrito": "Aveiro",
+      "regiao": "Centro"
+    },
+    "anadia": {
+      "nome": "Anadia",
+      "codigoine": "0103",
+      "distrito_code": "01",
+      "distrito": "Aveiro",
+      "regiao": "Centro"
+    },
+    "arouca": {
+      "nome": "Arouca",
+      "codigoine": "0104",
+      "distrito_code": "01",
+      "distrito": "Aveiro",
+      "regiao": "Centro"
+    },
+    "aveiro": {
+      "nome": "Aveiro",
+      "codigoine": "0105",
+      "distrito_code": "01",
+      "distrito": "Aveiro",
+      "regiao": "Centro"
+    },
+    "castelo de paiva": {
+      "nome": "Castelo de Paiva",
+      "codigoine": "0106",
+      "distrito_code": "01",
+      "distrito": "Aveiro",
+      "regiao": "Centro"
+    },
+    "espinho": {
+      "nome": "Espinho",
+      "codigoine": "0107",
+      "distrito_code": "01",
+      "distrito": "Aveiro",
+      "regiao": "Centro"
+    },
+    "estarreja": {
+      "nome": "Estarreja",
+      "codigoine": "0108",
+      "distrito_code": "01",
+      "distrito": "Aveiro",
+      "regiao": "Centro"
+    },
+    "ílhavo": {
+      "nome": "Ílhavo",
+      "codigoine": "0110",
+      "distrito_code": "01",
+      "distrito": "Aveiro",
+      "regiao": "Centro"
+    },
+    "mealhada": {
+      "nome": "Mealhada",
+      "codigoine": "0111",
+      "distrito_code": "01",
+      "distrito": "Aveiro",
+      "regiao": "Centro"
+    },
+    "murtosa": {
+      "nome": "Murtosa",
+      "codigoine": "0112",
+      "distrito_code": "01",
+      "distrito": "Aveiro",
+      "regiao": "Centro"
+    },
+    "oliveira de azeméis": {
+      "nome": "Oliveira de Azeméis",
+      "codigoine": "0113",
+      "distrito_code": "01",
+      "distrito": "Aveiro",
+      "regiao": "Centro"
+    },
+    "oliveira do bairro": {
+      "nome": "Oliveira do Bairro",
+      "codigoine": "0114",
+      "distrito_code": "01",
+      "distrito": "Aveiro",
+      "regiao": "Centro"
+    },
+    "ovar": {
+      "nome": "Ovar",
+      "codigoine": "0115",
+      "distrito_code": "01",
+      "distrito": "Aveiro",
+      "regiao": "Centro"
+    },
+    "santa maria da feira": {
+      "nome": "Santa Maria da Feira",
+      "codigoine": "0109",
+      "distrito_code": "01",
+      "distrito": "Aveiro",
+      "regiao": "Centro"
+    },
+    "são joão da madeira": {
+      "nome": "São João da Madeira",
+      "codigoine": "0116",
+      "distrito_code": "01",
+      "distrito": "Aveiro",
+      "regiao": "Centro"
+    },
+    "sever do vouga": {
+      "nome": "Sever do Vouga",
+      "codigoine": "0117",
+      "distrito_code": "01",
+      "distrito": "Aveiro",
+      "regiao": "Centro"
+    },
+    "vagos": {
+      "nome": "Vagos",
+      "codigoine": "0118",
+      "distrito_code": "01",
+      "distrito": "Aveiro",
+      "regiao": "Centro"
+    },
+    "vale de cambra": {
+      "nome": "Vale de Cambra",
+      "codigoine": "0119",
+      "distrito_code": "01",
+      "distrito": "Aveiro",
+      "regiao": "Centro"
+    },
+    "aljustrel": {
+      "nome": "Aljustrel",
+      "codigoine": "0201",
+      "distrito_code": "02",
+      "distrito": "Beja",
+      "regiao": "Alentejo"
+    },
+    "almodôvar": {
+      "nome": "Almodôvar",
+      "codigoine": "0202",
+      "distrito_code": "02",
+      "distrito": "Beja",
+      "regiao": "Alentejo"
+    },
+    "alvito": {
+      "nome": "Alvito",
+      "codigoine": "0203",
+      "distrito_code": "02",
+      "distrito": "Beja",
+      "regiao": "Alentejo"
+    },
+    "barrancos": {
+      "nome": "Barrancos",
+      "codigoine": "0204",
+      "distrito_code": "02",
+      "distrito": "Beja",
+      "regiao": "Alentejo"
+    },
+    "beja": {
+      "nome": "Beja",
+      "codigoine": "0205",
+      "distrito_code": "02",
+      "distrito": "Beja",
+      "regiao": "Alentejo"
+    },
+    "castro verde": {
+      "nome": "Castro Verde",
+      "codigoine": "0206",
+      "distrito_code": "02",
+      "distrito": "Beja",
+      "regiao": "Alentejo"
+    },
+    "cuba": {
+      "nome": "Cuba",
+      "codigoine": "0207",
+      "distrito_code": "02",
+      "distrito": "Beja",
+      "regiao": "Alentejo"
+    },
+    "ferreira do alentejo": {
+      "nome": "Ferreira do Alentejo",
+      "codigoine": "0208",
+      "distrito_code": "02",
+      "distrito": "Beja",
+      "regiao": "Alentejo"
+    },
+    "mértola": {
+      "nome": "Mértola",
+      "codigoine": "0209",
+      "distrito_code": "02",
+      "distrito": "Beja",
+      "regiao": "Alentejo"
+    },
+    "moura": {
+      "nome": "Moura",
+      "codigoine": "0210",
+      "distrito_code": "02",
+      "distrito": "Beja",
+      "regiao": "Alentejo"
+    },
+    "odemira": {
+      "nome": "Odemira",
+      "codigoine": "0211",
+      "distrito_code": "02",
+      "distrito": "Beja",
+      "regiao": "Alentejo"
+    },
+    "ourique": {
+      "nome": "Ourique",
+      "codigoine": "0212",
+      "distrito_code": "02",
+      "distrito": "Beja",
+      "regiao": "Alentejo"
+    },
+    "serpa": {
+      "nome": "Serpa",
+      "codigoine": "0213",
+      "distrito_code": "02",
+      "distrito": "Beja",
+      "regiao": "Alentejo"
+    },
+    "vidigueira": {
+      "nome": "Vidigueira",
+      "codigoine": "0214",
+      "distrito_code": "02",
+      "distrito": "Beja",
+      "regiao": "Alentejo"
+    },
+    "amares": {
+      "nome": "Amares",
+      "codigoine": "0301",
+      "distrito_code": "03",
+      "distrito": "Braga",
+      "regiao": "Norte"
+    },
+    "barcelos": {
+      "nome": "Barcelos",
+      "codigoine": "0302",
+      "distrito_code": "03",
+      "distrito": "Braga",
+      "regiao": "Norte"
+    },
+    "braga": {
+      "nome": "Braga",
+      "codigoine": "0303",
+      "distrito_code": "03",
+      "distrito": "Braga",
+      "regiao": "Norte"
+    },
+    "cabeceiras de basto": {
+      "nome": "Cabeceiras de Basto",
+      "codigoine": "0304",
+      "distrito_code": "03",
+      "distrito": "Braga",
+      "regiao": "Norte"
+    },
+    "celorico de basto": {
+      "nome": "Celorico de Basto",
+      "codigoine": "0305",
+      "distrito_code": "03",
+      "distrito": "Braga",
+      "regiao": "Norte"
+    },
+    "esposende": {
+      "nome": "Esposende",
+      "codigoine": "0306",
+      "distrito_code": "03",
+      "distrito": "Braga",
+      "regiao": "Norte"
+    },
+    "fafe": {
+      "nome": "Fafe",
+      "codigoine": "0307",
+      "distrito_code": "03",
+      "distrito": "Braga",
+      "regiao": "Norte"
+    },
+    "guimarães": {
+      "nome": "Guimarães",
+      "codigoine": "0308",
+      "distrito_code": "03",
+      "distrito": "Braga",
+      "regiao": "Norte"
+    },
+    "póvoa de lanhoso": {
+      "nome": "Póvoa de Lanhoso",
+      "codigoine": "0309",
+      "distrito_code": "03",
+      "distrito": "Braga",
+      "regiao": "Norte"
+    },
+    "terras de bouro": {
+      "nome": "Terras de Bouro",
+      "codigoine": "0310",
+      "distrito_code": "03",
+      "distrito": "Braga",
+      "regiao": "Norte"
+    },
+    "vieira do minho": {
+      "nome": "Vieira do Minho",
+      "codigoine": "0311",
+      "distrito_code": "03",
+      "distrito": "Braga",
+      "regiao": "Norte"
+    },
+    "vila nova de famalicão": {
+      "nome": "Vila Nova de Famalicão",
+      "codigoine": "0312",
+      "distrito_code": "03",
+      "distrito": "Braga",
+      "regiao": "Norte"
+    },
+    "vila verde": {
+      "nome": "Vila Verde",
+      "codigoine": "0313",
+      "distrito_code": "03",
+      "distrito": "Braga",
+      "regiao": "Norte"
+    },
+    "vizela": {
+      "nome": "Vizela",
+      "codigoine": "0314",
+      "distrito_code": "03",
+      "distrito": "Braga",
+      "regiao": "Norte"
+    },
+    "alfândega da fé": {
+      "nome": "Alfândega da fé",
+      "codigoine": "0401",
+      "distrito_code": "04",
+      "distrito": "Bragança",
+      "regiao": "Norte"
+    },
+    "bragança": {
+      "nome": "Bragança",
+      "codigoine": "0402",
+      "distrito_code": "04",
+      "distrito": "Bragança",
+      "regiao": "Norte"
+    },
+    "carrazeda de ansiães": {
+      "nome": "Carrazeda de Ansiães",
+      "codigoine": "0403",
+      "distrito_code": "04",
+      "distrito": "Bragança",
+      "regiao": "Norte"
+    },
+    "freixo de espada à cinta": {
+      "nome": "Freixo de Espada à Cinta",
+      "codigoine": "0404",
+      "distrito_code": "04",
+      "distrito": "Bragança",
+      "regiao": "Norte"
+    },
+    "macedo de cavaleiros": {
+      "nome": "Macedo de Cavaleiros",
+      "codigoine": "0405",
+      "distrito_code": "04",
+      "distrito": "Bragança",
+      "regiao": "Norte"
+    },
+    "miranda do douro": {
+      "nome": "Miranda do Douro",
+      "codigoine": "0406",
+      "distrito_code": "04",
+      "distrito": "Bragança",
+      "regiao": "Norte"
+    },
+    "mirandela": {
+      "nome": "Mirandela",
+      "codigoine": "0407",
+      "distrito_code": "04",
+      "distrito": "Bragança",
+      "regiao": "Norte"
+    },
+    "mogadouro": {
+      "nome": "Mogadouro",
+      "codigoine": "0408",
+      "distrito_code": "04",
+      "distrito": "Bragança",
+      "regiao": "Norte"
+    },
+    "torre de moncorvo": {
+      "nome": "Torre de Moncorvo",
+      "codigoine": "0409",
+      "distrito_code": "04",
+      "distrito": "Bragança",
+      "regiao": "Norte"
+    },
+    "vila flor": {
+      "nome": "Vila Flor",
+      "codigoine": "0410",
+      "distrito_code": "04",
+      "distrito": "Bragança",
+      "regiao": "Norte"
+    },
+    "vimioso": {
+      "nome": "Vimioso",
+      "codigoine": "0411",
+      "distrito_code": "04",
+      "distrito": "Bragança",
+      "regiao": "Norte"
+    },
+    "vinhais": {
+      "nome": "Vinhais",
+      "codigoine": "0412",
+      "distrito_code": "04",
+      "distrito": "Bragança",
+      "regiao": "Norte"
+    },
+    "belmonte": {
+      "nome": "Belmonte",
+      "codigoine": "0501",
+      "distrito_code": "05",
+      "distrito": "Castelo Branco",
+      "regiao": "Centro"
+    },
+    "castelo branco": {
+      "nome": "Castelo Branco",
+      "codigoine": "0502",
+      "distrito_code": "05",
+      "distrito": "Castelo Branco",
+      "regiao": "Centro"
+    },
+    "covilhã": {
+      "nome": "Covilhã",
+      "codigoine": "0503",
+      "distrito_code": "05",
+      "distrito": "Castelo Branco",
+      "regiao": "Centro"
+    },
+    "fundão": {
+      "nome": "Fundão",
+      "codigoine": "0504",
+      "distrito_code": "05",
+      "distrito": "Castelo Branco",
+      "regiao": "Centro"
+    },
+    "idanha-a-nova": {
+      "nome": "Idanha-a-nova",
+      "codigoine": "0505",
+      "distrito_code": "05",
+      "distrito": "Castelo Branco",
+      "regiao": "Centro"
+    },
+    "oleiros": {
+      "nome": "Oleiros",
+      "codigoine": "0506",
+      "distrito_code": "05",
+      "distrito": "Castelo Branco",
+      "regiao": "Centro"
+    },
+    "penamacor": {
+      "nome": "Penamacor",
+      "codigoine": "0507",
+      "distrito_code": "05",
+      "distrito": "Castelo Branco",
+      "regiao": "Centro"
+    },
+    "proença-a-nova": {
+      "nome": "Proença-a-nova",
+      "codigoine": "0508",
+      "distrito_code": "05",
+      "distrito": "Castelo Branco",
+      "regiao": "Centro"
+    },
+    "sertã": {
+      "nome": "Sertã",
+      "codigoine": "0509",
+      "distrito_code": "05",
+      "distrito": "Castelo Branco",
+      "regiao": "Centro"
+    },
+    "vila de rei": {
+      "nome": "Vila de Rei",
+      "codigoine": "0510",
+      "distrito_code": "05",
+      "distrito": "Castelo Branco",
+      "regiao": "Centro"
+    },
+    "vila velha de ródão": {
+      "nome": "Vila Velha de Ródão",
+      "codigoine": "0511",
+      "distrito_code": "05",
+      "distrito": "Castelo Branco",
+      "regiao": "Centro"
+    },
+    "arganil": {
+      "nome": "Arganil",
+      "codigoine": "0601",
+      "distrito_code": "06",
+      "distrito": "Coimbra",
+      "regiao": "Centro"
+    },
+    "cantanhede": {
+      "nome": "Cantanhede",
+      "codigoine": "0602",
+      "distrito_code": "06",
+      "distrito": "Coimbra",
+      "regiao": "Centro"
+    },
+    "coimbra": {
+      "nome": "Coimbra",
+      "codigoine": "0603",
+      "distrito_code": "06",
+      "distrito": "Coimbra",
+      "regiao": "Centro"
+    },
+    "condeixa-a-nova": {
+      "nome": "Condeixa-a-nova",
+      "codigoine": "0604",
+      "distrito_code": "06",
+      "distrito": "Coimbra",
+      "regiao": "Centro"
+    },
+    "figueira da foz": {
+      "nome": "Figueira da Foz",
+      "codigoine": "0605",
+      "distrito_code": "06",
+      "distrito": "Coimbra",
+      "regiao": "Centro"
+    },
+    "góis": {
+      "nome": "Góis",
+      "codigoine": "0606",
+      "distrito_code": "06",
+      "distrito": "Coimbra",
+      "regiao": "Centro"
+    },
+    "lousã": {
+      "nome": "Lousã",
+      "codigoine": "0607",
+      "distrito_code": "06",
+      "distrito": "Coimbra",
+      "regiao": "Centro"
+    },
+    "mira": {
+      "nome": "Mira",
+      "codigoine": "0608",
+      "distrito_code": "06",
+      "distrito": "Coimbra",
+      "regiao": "Centro"
+    },
+    "miranda do corvo": {
+      "nome": "Miranda do Corvo",
+      "codigoine": "0609",
+      "distrito_code": "06",
+      "distrito": "Coimbra",
+      "regiao": "Centro"
+    },
+    "montemor-o-velho": {
+      "nome": "Montemor-o-velho",
+      "codigoine": "0610",
+      "distrito_code": "06",
+      "distrito": "Coimbra",
+      "regiao": "Centro"
+    },
+    "oliveira do hospital": {
+      "nome": "Oliveira do Hospital",
+      "codigoine": "0611",
+      "distrito_code": "06",
+      "distrito": "Coimbra",
+      "regiao": "Centro"
+    },
+    "pampilhosa da serra": {
+      "nome": "Pampilhosa da Serra",
+      "codigoine": "0612",
+      "distrito_code": "06",
+      "distrito": "Coimbra",
+      "regiao": "Centro"
+    },
+    "penacova": {
+      "nome": "Penacova",
+      "codigoine": "0613",
+      "distrito_code": "06",
+      "distrito": "Coimbra",
+      "regiao": "Centro"
+    },
+    "penela": {
+      "nome": "Penela",
+      "codigoine": "0614",
+      "distrito_code": "06",
+      "distrito": "Coimbra",
+      "regiao": "Centro"
+    },
+    "soure": {
+      "nome": "Soure",
+      "codigoine": "0615",
+      "distrito_code": "06",
+      "distrito": "Coimbra",
+      "regiao": "Centro"
+    },
+    "tábua": {
+      "nome": "Tábua",
+      "codigoine": "0616",
+      "distrito_code": "06",
+      "distrito": "Coimbra",
+      "regiao": "Centro"
+    },
+    "vila nova de poiares": {
+      "nome": "Vila Nova de Poiares",
+      "codigoine": "0617",
+      "distrito_code": "06",
+      "distrito": "Coimbra",
+      "regiao": "Centro"
+    },
+    "albufeira": {
+      "nome": "Albufeira",
+      "codigoine": "0801",
+      "distrito_code": "08",
+      "distrito": "Faro",
+      "regiao": "Algarve"
+    },
+    "alcoutim": {
+      "nome": "Alcoutim",
+      "codigoine": "0802",
+      "distrito_code": "08",
+      "distrito": "Faro",
+      "regiao": "Algarve"
+    },
+    "aljezur": {
+      "nome": "Aljezur",
+      "codigoine": "0803",
+      "distrito_code": "08",
+      "distrito": "Faro",
+      "regiao": "Algarve"
+    },
+    "castro marim": {
+      "nome": "Castro Marim",
+      "codigoine": "0804",
+      "distrito_code": "08",
+      "distrito": "Faro",
+      "regiao": "Algarve"
+    },
+    "faro": {
+      "nome": "Faro",
+      "codigoine": "0805",
+      "distrito_code": "08",
+      "distrito": "Faro",
+      "regiao": "Algarve"
+    },
+    "lagoa": {
+      "nome": "Lagoa",
+      "codigoine": "0806",
+      "distrito_code": "08",
+      "distrito": "Faro",
+      "regiao": "Algarve"
+    },
+    "lagos": {
+      "nome": "Lagos",
+      "codigoine": "0807",
+      "distrito_code": "08",
+      "distrito": "Faro",
+      "regiao": "Algarve"
+    },
+    "loulé": {
+      "nome": "Loulé",
+      "codigoine": "0808",
+      "distrito_code": "08",
+      "distrito": "Faro",
+      "regiao": "Algarve"
+    },
+    "monchique": {
+      "nome": "Monchique",
+      "codigoine": "0809",
+      "distrito_code": "08",
+      "distrito": "Faro",
+      "regiao": "Algarve"
+    },
+    "olhão": {
+      "nome": "Olhão",
+      "codigoine": "0810",
+      "distrito_code": "08",
+      "distrito": "Faro",
+      "regiao": "Algarve"
+    },
+    "portimão": {
+      "nome": "Portimão",
+      "codigoine": "0811",
+      "distrito_code": "08",
+      "distrito": "Faro",
+      "regiao": "Algarve"
+    },
+    "são brás de alportel": {
+      "nome": "São Brás de Alportel",
+      "codigoine": "0812",
+      "distrito_code": "08",
+      "distrito": "Faro",
+      "regiao": "Algarve"
+    },
+    "silves": {
+      "nome": "Silves",
+      "codigoine": "0813",
+      "distrito_code": "08",
+      "distrito": "Faro",
+      "regiao": "Algarve"
+    },
+    "tavira": {
+      "nome": "Tavira",
+      "codigoine": "0814",
+      "distrito_code": "08",
+      "distrito": "Faro",
+      "regiao": "Algarve"
+    },
+    "vila do bispo": {
+      "nome": "Vila do Bispo",
+      "codigoine": "0815",
+      "distrito_code": "08",
+      "distrito": "Faro",
+      "regiao": "Algarve"
+    },
+    "vila real de santo antónio": {
+      "nome": "Vila Real de Santo António",
+      "codigoine": "0816",
+      "distrito_code": "08",
+      "distrito": "Faro",
+      "regiao": "Algarve"
+    },
+    "aguiar da beira": {
+      "nome": "Aguiar da Beira",
+      "codigoine": "0901",
+      "distrito_code": "09",
+      "distrito": "Guarda",
+      "regiao": "Centro"
+    },
+    "almeida": {
+      "nome": "Almeida",
+      "codigoine": "0902",
+      "distrito_code": "09",
+      "distrito": "Guarda",
+      "regiao": "Centro"
+    },
+    "celorico da beira": {
+      "nome": "Celorico da Beira",
+      "codigoine": "0903",
+      "distrito_code": "09",
+      "distrito": "Guarda",
+      "regiao": "Centro"
+    },
+    "figueira de castelo rodrigo": {
+      "nome": "Figueira de Castelo Rodrigo",
+      "codigoine": "0904",
+      "distrito_code": "09",
+      "distrito": "Guarda",
+      "regiao": "Centro"
+    },
+    "fornos de algodres": {
+      "nome": "Fornos de Algodres",
+      "codigoine": "0905",
+      "distrito_code": "09",
+      "distrito": "Guarda",
+      "regiao": "Centro"
+    },
+    "gouveia": {
+      "nome": "Gouveia",
+      "codigoine": "0906",
+      "distrito_code": "09",
+      "distrito": "Guarda",
+      "regiao": "Centro"
+    },
+    "guarda": {
+      "nome": "Guarda",
+      "codigoine": "0907",
+      "distrito_code": "09",
+      "distrito": "Guarda",
+      "regiao": "Centro"
+    },
+    "manteigas": {
+      "nome": "Manteigas",
+      "codigoine": "0908",
+      "distrito_code": "09",
+      "distrito": "Guarda",
+      "regiao": "Centro"
+    },
+    "mêda": {
+      "nome": "Mêda",
+      "codigoine": "0909",
+      "distrito_code": "09",
+      "distrito": "Guarda",
+      "regiao": "Centro"
+    },
+    "pinhel": {
+      "nome": "Pinhel",
+      "codigoine": "0910",
+      "distrito_code": "09",
+      "distrito": "Guarda",
+      "regiao": "Centro"
+    },
+    "sabugal": {
+      "nome": "Sabugal",
+      "codigoine": "0911",
+      "distrito_code": "09",
+      "distrito": "Guarda",
+      "regiao": "Centro"
+    },
+    "seia": {
+      "nome": "Seia",
+      "codigoine": "0912",
+      "distrito_code": "09",
+      "distrito": "Guarda",
+      "regiao": "Centro"
+    },
+    "trancoso": {
+      "nome": "Trancoso",
+      "codigoine": "0913",
+      "distrito_code": "09",
+      "distrito": "Guarda",
+      "regiao": "Centro"
+    },
+    "vila nova de foz côa": {
+      "nome": "Vila Nova de Foz Côa",
+      "codigoine": "0914",
+      "distrito_code": "09",
+      "distrito": "Guarda",
+      "regiao": "Centro"
+    },
+    "lajes das flores": {
+      "nome": "Lajes Das Flores",
+      "codigoine": "4801",
+      "distrito_code": "48",
+      "distrito": "Ilha Das Flores",
+      "regiao": "Região Autónoma dos Açores"
+    },
+    "santa cruz das flores": {
+      "nome": "Santa Cruz Das Flores",
+      "codigoine": "4802",
+      "distrito_code": "48",
+      "distrito": "Ilha Das Flores",
+      "regiao": "Região Autónoma dos Açores"
+    },
+    "angra do heroísmo": {
+      "nome": "Angra do Heroísmo",
+      "codigoine": "4301",
+      "distrito_code": "43",
+      "distrito": "Ilha Terceira",
+      "regiao": "Região Autónoma dos Açores"
+    },
+    "praia da vitória": {
+      "nome": "Praia da Vitória",
+      "codigoine": "4302",
+      "distrito_code": "43",
+      "distrito": "Ilha Terceira",
+      "regiao": "Região Autónoma dos Açores"
+    },
+    "santa cruz da graciosa": {
+      "nome": "Santa Cruz da Graciosa",
+      "codigoine": "4401",
+      "distrito_code": "44",
+      "distrito": "Ilha da Graciosa",
+      "regiao": "Região Autónoma dos Açores"
+    },
+    "calheta": {
+      "nome": "Calheta",
+      "codigoine": "3101",
+      "distrito_code": "31",
+      "distrito": "Ilha da Madeira",
+      "regiao": "Região Autónoma da Madeira"
+    },
+    "câmara de lobos": {
+      "nome": "Câmara de Lobos",
+      "codigoine": "3102",
+      "distrito_code": "31",
+      "distrito": "Ilha da Madeira",
+      "regiao": "Região Autónoma da Madeira"
+    },
+    "funchal": {
+      "nome": "Funchal",
+      "codigoine": "3103",
+      "distrito_code": "31",
+      "distrito": "Ilha da Madeira",
+      "regiao": "Região Autónoma da Madeira"
+    },
+    "machico": {
+      "nome": "Machico",
+      "codigoine": "3104",
+      "distrito_code": "31",
+      "distrito": "Ilha da Madeira",
+      "regiao": "Região Autónoma da Madeira"
+    },
+    "ponta do sol": {
+      "nome": "Ponta do Sol",
+      "codigoine": "3105",
+      "distrito_code": "31",
+      "distrito": "Ilha da Madeira",
+      "regiao": "Região Autónoma da Madeira"
+    },
+    "porto moniz": {
+      "nome": "Porto Moniz",
+      "codigoine": "3106",
+      "distrito_code": "31",
+      "distrito": "Ilha da Madeira",
+      "regiao": "Região Autónoma da Madeira"
+    },
+    "ribeira brava": {
+      "nome": "Ribeira Brava",
+      "codigoine": "3107",
+      "distrito_code": "31",
+      "distrito": "Ilha da Madeira",
+      "regiao": "Região Autónoma da Madeira"
+    },
+    "santa cruz": {
+      "nome": "Santa Cruz",
+      "codigoine": "3108",
+      "distrito_code": "31",
+      "distrito": "Ilha da Madeira",
+      "regiao": "Região Autónoma da Madeira"
+    },
+    "santana": {
+      "nome": "Santana",
+      "codigoine": "3109",
+      "distrito_code": "31",
+      "distrito": "Ilha da Madeira",
+      "regiao": "Região Autónoma da Madeira"
+    },
+    "são vicente": {
+      "nome": "São Vicente",
+      "codigoine": "3110",
+      "distrito_code": "31",
+      "distrito": "Ilha da Madeira",
+      "regiao": "Região Autónoma da Madeira"
+    },
+    "porto santo": {
+      "nome": "Porto Santo",
+      "codigoine": "3201",
+      "distrito_code": "32",
+      "distrito": "Ilha de Porto Santo",
+      "regiao": "Região Autónoma da Madeira"
+    },
+    "vila do porto": {
+      "nome": "Vila do Porto",
+      "codigoine": "4101",
+      "distrito_code": "41",
+      "distrito": "Ilha de Santa Maria",
+      "regiao": "Região Autónoma dos Açores"
+    },
+    "calheta de são jorge": {
+      "nome": "Calheta de São Jorge",
+      "codigoine": "4501",
+      "distrito_code": "45",
+      "distrito": "Ilha de São Jorge",
+      "regiao": "Região Autónoma dos Açores"
+    },
+    "velas": {
+      "nome": "Velas",
+      "codigoine": "4502",
+      "distrito_code": "45",
+      "distrito": "Ilha de São Jorge",
+      "regiao": "Região Autónoma dos Açores"
+    },
+    "lagoa (açores)": {
+      "nome": "Lagoa (açores)",
+      "codigoine": "4201",
+      "distrito_code": "42",
+      "distrito": "Ilha de São Miguel",
+      "regiao": "Região Autónoma dos Açores"
+    },
+    "nordeste": {
+      "nome": "Nordeste",
+      "codigoine": "4202",
+      "distrito_code": "42",
+      "distrito": "Ilha de São Miguel",
+      "regiao": "Região Autónoma dos Açores"
+    },
+    "ponta delgada": {
+      "nome": "Ponta Delgada",
+      "codigoine": "4203",
+      "distrito_code": "42",
+      "distrito": "Ilha de São Miguel",
+      "regiao": "Região Autónoma dos Açores"
+    },
+    "povoação": {
+      "nome": "Povoação",
+      "codigoine": "4204",
+      "distrito_code": "42",
+      "distrito": "Ilha de São Miguel",
+      "regiao": "Região Autónoma dos Açores"
+    },
+    "ribeira grande": {
+      "nome": "Ribeira Grande",
+      "codigoine": "4205",
+      "distrito_code": "42",
+      "distrito": "Ilha de São Miguel",
+      "regiao": "Região Autónoma dos Açores"
+    },
+    "vila franca do campo": {
+      "nome": "Vila Franca do Campo",
+      "codigoine": "4206",
+      "distrito_code": "42",
+      "distrito": "Ilha de São Miguel",
+      "regiao": "Região Autónoma dos Açores"
+    },
+    "corvo": {
+      "nome": "Corvo",
+      "codigoine": "4901",
+      "distrito_code": "49",
+      "distrito": "Ilha do Corvo",
+      "regiao": "Região Autónoma dos Açores"
+    },
+    "horta": {
+      "nome": "Horta",
+      "codigoine": "4701",
+      "distrito_code": "47",
+      "distrito": "Ilha do Faial",
+      "regiao": "Região Autónoma dos Açores"
+    },
+    "lajes do pico": {
+      "nome": "Lajes do Pico",
+      "codigoine": "4601",
+      "distrito_code": "46",
+      "distrito": "Ilha do Pico",
+      "regiao": "Região Autónoma dos Açores"
+    },
+    "madalena": {
+      "nome": "Madalena",
+      "codigoine": "4602",
+      "distrito_code": "46",
+      "distrito": "Ilha do Pico",
+      "regiao": "Região Autónoma dos Açores"
+    },
+    "são roque do pico": {
+      "nome": "São Roque do Pico",
+      "codigoine": "4603",
+      "distrito_code": "46",
+      "distrito": "Ilha do Pico",
+      "regiao": "Região Autónoma dos Açores"
+    },
+    "alcobaça": {
+      "nome": "Alcobaça",
+      "codigoine": "1001",
+      "distrito_code": "10",
+      "distrito": "Leiria",
+      "regiao": "Centro"
+    },
+    "alvaiázere": {
+      "nome": "Alvaiázere",
+      "codigoine": "1002",
+      "distrito_code": "10",
+      "distrito": "Leiria",
+      "regiao": "Centro"
+    },
+    "ansião": {
+      "nome": "Ansião",
+      "codigoine": "1003",
+      "distrito_code": "10",
+      "distrito": "Leiria",
+      "regiao": "Centro"
+    },
+    "batalha": {
+      "nome": "Batalha",
+      "codigoine": "1004",
+      "distrito_code": "10",
+      "distrito": "Leiria",
+      "regiao": "Centro"
+    },
+    "bombarral": {
+      "nome": "Bombarral",
+      "codigoine": "1005",
+      "distrito_code": "10",
+      "distrito": "Leiria",
+      "regiao": "Centro"
+    },
+    "caldas da rainha": {
+      "nome": "Caldas da Rainha",
+      "codigoine": "1006",
+      "distrito_code": "10",
+      "distrito": "Leiria",
+      "regiao": "Centro"
+    },
+    "castanheira de pêra": {
+      "nome": "Castanheira de Pêra",
+      "codigoine": "1007",
+      "distrito_code": "10",
+      "distrito": "Leiria",
+      "regiao": "Centro"
+    },
+    "figueiró dos vinhos": {
+      "nome": "Figueiró Dos Vinhos",
+      "codigoine": "1008",
+      "distrito_code": "10",
+      "distrito": "Leiria",
+      "regiao": "Centro"
+    },
+    "leiria": {
+      "nome": "Leiria",
+      "codigoine": "1009",
+      "distrito_code": "10",
+      "distrito": "Leiria",
+      "regiao": "Centro"
+    },
+    "marinha grande": {
+      "nome": "Marinha Grande",
+      "codigoine": "1010",
+      "distrito_code": "10",
+      "distrito": "Leiria",
+      "regiao": "Centro"
+    },
+    "nazaré": {
+      "nome": "Nazaré",
+      "codigoine": "1011",
+      "distrito_code": "10",
+      "distrito": "Leiria",
+      "regiao": "Centro"
+    },
+    "óbidos": {
+      "nome": "Óbidos",
+      "codigoine": "1012",
+      "distrito_code": "10",
+      "distrito": "Leiria",
+      "regiao": "Centro"
+    },
+    "pedrógão grande": {
+      "nome": "Pedrógão Grande",
+      "codigoine": "1013",
+      "distrito_code": "10",
+      "distrito": "Leiria",
+      "regiao": "Centro"
+    },
+    "peniche": {
+      "nome": "Peniche",
+      "codigoine": "1014",
+      "distrito_code": "10",
+      "distrito": "Leiria",
+      "regiao": "Centro"
+    },
+    "pombal": {
+      "nome": "Pombal",
+      "codigoine": "1015",
+      "distrito_code": "10",
+      "distrito": "Leiria",
+      "regiao": "Centro"
+    },
+    "porto de mós": {
+      "nome": "Porto de Mós",
+      "codigoine": "1016",
+      "distrito_code": "10",
+      "distrito": "Leiria",
+      "regiao": "Centro"
+    },
+    "alenquer": {
+      "nome": "Alenquer",
+      "codigoine": "1101",
+      "distrito_code": "11",
+      "distrito": "Lisboa",
+      "regiao": "Área Metropolitana de Lisboa"
+    },
+    "amadora": {
+      "nome": "Amadora",
+      "codigoine": "1115",
+      "distrito_code": "11",
+      "distrito": "Lisboa",
+      "regiao": "Área Metropolitana de Lisboa"
+    },
+    "arruda dos vinhos": {
+      "nome": "Arruda Dos Vinhos",
+      "codigoine": "1102",
+      "distrito_code": "11",
+      "distrito": "Lisboa",
+      "regiao": "Área Metropolitana de Lisboa"
+    },
+    "azambuja": {
+      "nome": "Azambuja",
+      "codigoine": "1103",
+      "distrito_code": "11",
+      "distrito": "Lisboa",
+      "regiao": "Área Metropolitana de Lisboa"
+    },
+    "cadaval": {
+      "nome": "Cadaval",
+      "codigoine": "1104",
+      "distrito_code": "11",
+      "distrito": "Lisboa",
+      "regiao": "Área Metropolitana de Lisboa"
+    },
+    "cascais": {
+      "nome": "Cascais",
+      "codigoine": "1105",
+      "distrito_code": "11",
+      "distrito": "Lisboa",
+      "regiao": "Área Metropolitana de Lisboa"
+    },
+    "lisboa": {
+      "nome": "Lisboa",
+      "codigoine": "1106",
+      "distrito_code": "11",
+      "distrito": "Lisboa",
+      "regiao": "Área Metropolitana de Lisboa"
+    },
+    "loures": {
+      "nome": "Loures",
+      "codigoine": "1107",
+      "distrito_code": "11",
+      "distrito": "Lisboa",
+      "regiao": "Área Metropolitana de Lisboa"
+    },
+    "lourinhã": {
+      "nome": "Lourinhã",
+      "codigoine": "1108",
+      "distrito_code": "11",
+      "distrito": "Lisboa",
+      "regiao": "Área Metropolitana de Lisboa"
+    },
+    "mafra": {
+      "nome": "Mafra",
+      "codigoine": "1109",
+      "distrito_code": "11",
+      "distrito": "Lisboa",
+      "regiao": "Área Metropolitana de Lisboa"
+    },
+    "odivelas": {
+      "nome": "Odivelas",
+      "codigoine": "1116",
+      "distrito_code": "11",
+      "distrito": "Lisboa",
+      "regiao": "Área Metropolitana de Lisboa"
+    },
+    "oeiras": {
+      "nome": "Oeiras",
+      "codigoine": "1110",
+      "distrito_code": "11",
+      "distrito": "Lisboa",
+      "regiao": "Área Metropolitana de Lisboa"
+    },
+    "sintra": {
+      "nome": "Sintra",
+      "codigoine": "1111",
+      "distrito_code": "11",
+      "distrito": "Lisboa",
+      "regiao": "Área Metropolitana de Lisboa"
+    },
+    "sobral de monte agraço": {
+      "nome": "Sobral de Monte Agraço",
+      "codigoine": "1112",
+      "distrito_code": "11",
+      "distrito": "Lisboa",
+      "regiao": "Área Metropolitana de Lisboa"
+    },
+    "torres vedras": {
+      "nome": "Torres Vedras",
+      "codigoine": "1113",
+      "distrito_code": "11",
+      "distrito": "Lisboa",
+      "regiao": "Área Metropolitana de Lisboa"
+    },
+    "vila franca de xira": {
+      "nome": "Vila Franca de Xira",
+      "codigoine": "1114",
+      "distrito_code": "11",
+      "distrito": "Lisboa",
+      "regiao": "Área Metropolitana de Lisboa"
+    },
+    "alter do chão": {
+      "nome": "Alter do Chão",
+      "codigoine": "1201",
+      "distrito_code": "12",
+      "distrito": "Portalegre",
+      "regiao": "Alentejo"
+    },
+    "arronches": {
+      "nome": "Arronches",
+      "codigoine": "1202",
+      "distrito_code": "12",
+      "distrito": "Portalegre",
+      "regiao": "Alentejo"
+    },
+    "avis": {
+      "nome": "Avis",
+      "codigoine": "1203",
+      "distrito_code": "12",
+      "distrito": "Portalegre",
+      "regiao": "Alentejo"
+    },
+    "campo maior": {
+      "nome": "Campo Maior",
+      "codigoine": "1204",
+      "distrito_code": "12",
+      "distrito": "Portalegre",
+      "regiao": "Alentejo"
+    },
+    "castelo de vide": {
+      "nome": "Castelo de Vide",
+      "codigoine": "1205",
+      "distrito_code": "12",
+      "distrito": "Portalegre",
+      "regiao": "Alentejo"
+    },
+    "crato": {
+      "nome": "Crato",
+      "codigoine": "1206",
+      "distrito_code": "12",
+      "distrito": "Portalegre",
+      "regiao": "Alentejo"
+    },
+    "elvas": {
+      "nome": "Elvas",
+      "codigoine": "1207",
+      "distrito_code": "12",
+      "distrito": "Portalegre",
+      "regiao": "Alentejo"
+    },
+    "fronteira": {
+      "nome": "Fronteira",
+      "codigoine": "1208",
+      "distrito_code": "12",
+      "distrito": "Portalegre",
+      "regiao": "Alentejo"
+    },
+    "gavião": {
+      "nome": "Gavião",
+      "codigoine": "1209",
+      "distrito_code": "12",
+      "distrito": "Portalegre",
+      "regiao": "Alentejo"
+    },
+    "marvão": {
+      "nome": "Marvão",
+      "codigoine": "1210",
+      "distrito_code": "12",
+      "distrito": "Portalegre",
+      "regiao": "Alentejo"
+    },
+    "monforte": {
+      "nome": "Monforte",
+      "codigoine": "1211",
+      "distrito_code": "12",
+      "distrito": "Portalegre",
+      "regiao": "Alentejo"
+    },
+    "nisa": {
+      "nome": "Nisa",
+      "codigoine": "1212",
+      "distrito_code": "12",
+      "distrito": "Portalegre",
+      "regiao": "Alentejo"
+    },
+    "ponte de sor": {
+      "nome": "Ponte de Sor",
+      "codigoine": "1213",
+      "distrito_code": "12",
+      "distrito": "Portalegre",
+      "regiao": "Alentejo"
+    },
+    "portalegre": {
+      "nome": "Portalegre",
+      "codigoine": "1214",
+      "distrito_code": "12",
+      "distrito": "Portalegre",
+      "regiao": "Alentejo"
+    },
+    "sousel": {
+      "nome": "Sousel",
+      "codigoine": "1215",
+      "distrito_code": "12",
+      "distrito": "Portalegre",
+      "regiao": "Alentejo"
+    },
+    "amarante": {
+      "nome": "Amarante",
+      "codigoine": "1301",
+      "distrito_code": "13",
+      "distrito": "Porto",
+      "regiao": "Norte"
+    },
+    "baião": {
+      "nome": "Baião",
+      "codigoine": "1302",
+      "distrito_code": "13",
+      "distrito": "Porto",
+      "regiao": "Norte"
+    },
+    "felgueiras": {
+      "nome": "Felgueiras",
+      "codigoine": "1303",
+      "distrito_code": "13",
+      "distrito": "Porto",
+      "regiao": "Norte"
+    },
+    "gondomar": {
+      "nome": "Gondomar",
+      "codigoine": "1304",
+      "distrito_code": "13",
+      "distrito": "Porto",
+      "regiao": "Norte"
+    },
+    "lousada": {
+      "nome": "Lousada",
+      "codigoine": "1305",
+      "distrito_code": "13",
+      "distrito": "Porto",
+      "regiao": "Norte"
+    },
+    "maia": {
+      "nome": "Maia",
+      "codigoine": "1306",
+      "distrito_code": "13",
+      "distrito": "Porto",
+      "regiao": "Norte"
+    },
+    "marco de canaveses": {
+      "nome": "Marco de Canaveses",
+      "codigoine": "1307",
+      "distrito_code": "13",
+      "distrito": "Porto",
+      "regiao": "Norte"
+    },
+    "matosinhos": {
+      "nome": "Matosinhos",
+      "codigoine": "1308",
+      "distrito_code": "13",
+      "distrito": "Porto",
+      "regiao": "Norte"
+    },
+    "paços de ferreira": {
+      "nome": "Paços de Ferreira",
+      "codigoine": "1309",
+      "distrito_code": "13",
+      "distrito": "Porto",
+      "regiao": "Norte"
+    },
+    "paredes": {
+      "nome": "Paredes",
+      "codigoine": "1310",
+      "distrito_code": "13",
+      "distrito": "Porto",
+      "regiao": "Norte"
+    },
+    "penafiel": {
+      "nome": "Penafiel",
+      "codigoine": "1311",
+      "distrito_code": "13",
+      "distrito": "Porto",
+      "regiao": "Norte"
+    },
+    "porto": {
+      "nome": "Porto",
+      "codigoine": "1312",
+      "distrito_code": "13",
+      "distrito": "Porto",
+      "regiao": "Norte"
+    },
+    "póvoa de varzim": {
+      "nome": "Póvoa de Varzim",
+      "codigoine": "1313",
+      "distrito_code": "13",
+      "distrito": "Porto",
+      "regiao": "Norte"
+    },
+    "santo tirso": {
+      "nome": "Santo Tirso",
+      "codigoine": "1314",
+      "distrito_code": "13",
+      "distrito": "Porto",
+      "regiao": "Norte"
+    },
+    "trofa": {
+      "nome": "Trofa",
+      "codigoine": "1318",
+      "distrito_code": "13",
+      "distrito": "Porto",
+      "regiao": "Norte"
+    },
+    "valongo": {
+      "nome": "Valongo",
+      "codigoine": "1315",
+      "distrito_code": "13",
+      "distrito": "Porto",
+      "regiao": "Norte"
+    },
+    "vila do conde": {
+      "nome": "Vila do Conde",
+      "codigoine": "1316",
+      "distrito_code": "13",
+      "distrito": "Porto",
+      "regiao": "Norte"
+    },
+    "vila nova de gaia": {
+      "nome": "Vila Nova de Gaia",
+      "codigoine": "1317",
+      "distrito_code": "13",
+      "distrito": "Porto",
+      "regiao": "Norte"
+    },
+    "abrantes": {
+      "nome": "Abrantes",
+      "codigoine": "1401",
+      "distrito_code": "14",
+      "distrito": "Santarém",
+      "regiao": "Alentejo"
+    },
+    "alcanena": {
+      "nome": "Alcanena",
+      "codigoine": "1402",
+      "distrito_code": "14",
+      "distrito": "Santarém",
+      "regiao": "Alentejo"
+    },
+    "almeirim": {
+      "nome": "Almeirim",
+      "codigoine": "1403",
+      "distrito_code": "14",
+      "distrito": "Santarém",
+      "regiao": "Alentejo"
+    },
+    "alpiarça": {
+      "nome": "Alpiarça",
+      "codigoine": "1404",
+      "distrito_code": "14",
+      "distrito": "Santarém",
+      "regiao": "Alentejo"
+    },
+    "benavente": {
+      "nome": "Benavente",
+      "codigoine": "1405",
+      "distrito_code": "14",
+      "distrito": "Santarém",
+      "regiao": "Alentejo"
+    },
+    "cartaxo": {
+      "nome": "Cartaxo",
+      "codigoine": "1406",
+      "distrito_code": "14",
+      "distrito": "Santarém",
+      "regiao": "Alentejo"
+    },
+    "chamusca": {
+      "nome": "Chamusca",
+      "codigoine": "1407",
+      "distrito_code": "14",
+      "distrito": "Santarém",
+      "regiao": "Alentejo"
+    },
+    "constância": {
+      "nome": "Constância",
+      "codigoine": "1408",
+      "distrito_code": "14",
+      "distrito": "Santarém",
+      "regiao": "Alentejo"
+    },
+    "coruche": {
+      "nome": "Coruche",
+      "codigoine": "1409",
+      "distrito_code": "14",
+      "distrito": "Santarém",
+      "regiao": "Alentejo"
+    },
+    "entroncamento": {
+      "nome": "Entroncamento",
+      "codigoine": "1410",
+      "distrito_code": "14",
+      "distrito": "Santarém",
+      "regiao": "Alentejo"
+    },
+    "ferreira do zêzere": {
+      "nome": "Ferreira do Zêzere",
+      "codigoine": "1411",
+      "distrito_code": "14",
+      "distrito": "Santarém",
+      "regiao": "Alentejo"
+    },
+    "golegã": {
+      "nome": "Golegã",
+      "codigoine": "1412",
+      "distrito_code": "14",
+      "distrito": "Santarém",
+      "regiao": "Alentejo"
+    },
+    "mação": {
+      "nome": "Mação",
+      "codigoine": "1413",
+      "distrito_code": "14",
+      "distrito": "Santarém",
+      "regiao": "Alentejo"
+    },
+    "ourém": {
+      "nome": "Ourém",
+      "codigoine": "1421",
+      "distrito_code": "14",
+      "distrito": "Santarém",
+      "regiao": "Alentejo"
+    },
+    "rio maior": {
+      "nome": "Rio Maior",
+      "codigoine": "1414",
+      "distrito_code": "14",
+      "distrito": "Santarém",
+      "regiao": "Alentejo"
+    },
+    "salvaterra de magos": {
+      "nome": "Salvaterra de Magos",
+      "codigoine": "1415",
+      "distrito_code": "14",
+      "distrito": "Santarém",
+      "regiao": "Alentejo"
+    },
+    "santarém": {
+      "nome": "Santarém",
+      "codigoine": "1416",
+      "distrito_code": "14",
+      "distrito": "Santarém",
+      "regiao": "Alentejo"
+    },
+    "sardoal": {
+      "nome": "Sardoal",
+      "codigoine": "1417",
+      "distrito_code": "14",
+      "distrito": "Santarém",
+      "regiao": "Alentejo"
+    },
+    "tomar": {
+      "nome": "Tomar",
+      "codigoine": "1418",
+      "distrito_code": "14",
+      "distrito": "Santarém",
+      "regiao": "Alentejo"
+    },
+    "torres novas": {
+      "nome": "Torres Novas",
+      "codigoine": "1419",
+      "distrito_code": "14",
+      "distrito": "Santarém",
+      "regiao": "Alentejo"
+    },
+    "vila nova da barquinha": {
+      "nome": "Vila Nova da Barquinha",
+      "codigoine": "1420",
+      "distrito_code": "14",
+      "distrito": "Santarém",
+      "regiao": "Alentejo"
+    },
+    "alcácer do sal": {
+      "nome": "Alcácer do Sal",
+      "codigoine": "1501",
+      "distrito_code": "15",
+      "distrito": "Setúbal",
+      "regiao": "Área Metropolitana de Lisboa"
+    },
+    "alcochete": {
+      "nome": "Alcochete",
+      "codigoine": "1502",
+      "distrito_code": "15",
+      "distrito": "Setúbal",
+      "regiao": "Área Metropolitana de Lisboa"
+    },
+    "almada": {
+      "nome": "Almada",
+      "codigoine": "1503",
+      "distrito_code": "15",
+      "distrito": "Setúbal",
+      "regiao": "Área Metropolitana de Lisboa"
+    },
+    "barreiro": {
+      "nome": "Barreiro",
+      "codigoine": "1504",
+      "distrito_code": "15",
+      "distrito": "Setúbal",
+      "regiao": "Área Metropolitana de Lisboa"
+    },
+    "grândola": {
+      "nome": "Grândola",
+      "codigoine": "1505",
+      "distrito_code": "15",
+      "distrito": "Setúbal",
+      "regiao": "Área Metropolitana de Lisboa"
+    },
+    "moita": {
+      "nome": "Moita",
+      "codigoine": "1506",
+      "distrito_code": "15",
+      "distrito": "Setúbal",
+      "regiao": "Área Metropolitana de Lisboa"
+    },
+    "montijo": {
+      "nome": "Montijo",
+      "codigoine": "1507",
+      "distrito_code": "15",
+      "distrito": "Setúbal",
+      "regiao": "Área Metropolitana de Lisboa"
+    },
+    "palmela": {
+      "nome": "Palmela",
+      "codigoine": "1508",
+      "distrito_code": "15",
+      "distrito": "Setúbal",
+      "regiao": "Área Metropolitana de Lisboa"
+    },
+    "santiago do cacém": {
+      "nome": "Santiago do Cacém",
+      "codigoine": "1509",
+      "distrito_code": "15",
+      "distrito": "Setúbal",
+      "regiao": "Área Metropolitana de Lisboa"
+    },
+    "seixal": {
+      "nome": "Seixal",
+      "codigoine": "1510",
+      "distrito_code": "15",
+      "distrito": "Setúbal",
+      "regiao": "Área Metropolitana de Lisboa"
+    },
+    "sesimbra": {
+      "nome": "Sesimbra",
+      "codigoine": "1511",
+      "distrito_code": "15",
+      "distrito": "Setúbal",
+      "regiao": "Área Metropolitana de Lisboa"
+    },
+    "setúbal": {
+      "nome": "Setúbal",
+      "codigoine": "1512",
+      "distrito_code": "15",
+      "distrito": "Setúbal",
+      "regiao": "Área Metropolitana de Lisboa"
+    },
+    "sines": {
+      "nome": "Sines",
+      "codigoine": "1513",
+      "distrito_code": "15",
+      "distrito": "Setúbal",
+      "regiao": "Área Metropolitana de Lisboa"
+    },
+    "arcos de valdevez": {
+      "nome": "Arcos de Valdevez",
+      "codigoine": "1601",
+      "distrito_code": "16",
+      "distrito": "Viana do Castelo",
+      "regiao": "Norte"
+    },
+    "caminha": {
+      "nome": "Caminha",
+      "codigoine": "1602",
+      "distrito_code": "16",
+      "distrito": "Viana do Castelo",
+      "regiao": "Norte"
+    },
+    "melgaço": {
+      "nome": "Melgaço",
+      "codigoine": "1603",
+      "distrito_code": "16",
+      "distrito": "Viana do Castelo",
+      "regiao": "Norte"
+    },
+    "monção": {
+      "nome": "Monção",
+      "codigoine": "1604",
+      "distrito_code": "16",
+      "distrito": "Viana do Castelo",
+      "regiao": "Norte"
+    },
+    "paredes de coura": {
+      "nome": "Paredes de Coura",
+      "codigoine": "1605",
+      "distrito_code": "16",
+      "distrito": "Viana do Castelo",
+      "regiao": "Norte"
+    },
+    "ponte da barca": {
+      "nome": "Ponte da Barca",
+      "codigoine": "1606",
+      "distrito_code": "16",
+      "distrito": "Viana do Castelo",
+      "regiao": "Norte"
+    },
+    "ponte de lima": {
+      "nome": "Ponte de Lima",
+      "codigoine": "1607",
+      "distrito_code": "16",
+      "distrito": "Viana do Castelo",
+      "regiao": "Norte"
+    },
+    "valença": {
+      "nome": "Valença",
+      "codigoine": "1608",
+      "distrito_code": "16",
+      "distrito": "Viana do Castelo",
+      "regiao": "Norte"
+    },
+    "viana do castelo": {
+      "nome": "Viana do Castelo",
+      "codigoine": "1609",
+      "distrito_code": "16",
+      "distrito": "Viana do Castelo",
+      "regiao": "Norte"
+    },
+    "vila nova de cerveira": {
+      "nome": "Vila Nova de Cerveira",
+      "codigoine": "1610",
+      "distrito_code": "16",
+      "distrito": "Viana do Castelo",
+      "regiao": "Norte"
+    },
+    "alijó": {
+      "nome": "Alijó",
+      "codigoine": "1701",
+      "distrito_code": "17",
+      "distrito": "Vila Real",
+      "regiao": "Norte"
+    },
+    "boticas": {
+      "nome": "Boticas",
+      "codigoine": "1702",
+      "distrito_code": "17",
+      "distrito": "Vila Real",
+      "regiao": "Norte"
+    },
+    "chaves": {
+      "nome": "Chaves",
+      "codigoine": "1703",
+      "distrito_code": "17",
+      "distrito": "Vila Real",
+      "regiao": "Norte"
+    },
+    "mesão frio": {
+      "nome": "Mesão Frio",
+      "codigoine": "1704",
+      "distrito_code": "17",
+      "distrito": "Vila Real",
+      "regiao": "Norte"
+    },
+    "mondim de basto": {
+      "nome": "Mondim de Basto",
+      "codigoine": "1705",
+      "distrito_code": "17",
+      "distrito": "Vila Real",
+      "regiao": "Norte"
+    },
+    "montalegre": {
+      "nome": "Montalegre",
+      "codigoine": "1706",
+      "distrito_code": "17",
+      "distrito": "Vila Real",
+      "regiao": "Norte"
+    },
+    "murça": {
+      "nome": "Murça",
+      "codigoine": "1707",
+      "distrito_code": "17",
+      "distrito": "Vila Real",
+      "regiao": "Norte"
+    },
+    "peso da régua": {
+      "nome": "Peso da Régua",
+      "codigoine": "1708",
+      "distrito_code": "17",
+      "distrito": "Vila Real",
+      "regiao": "Norte"
+    },
+    "ribeira de pena": {
+      "nome": "Ribeira de Pena",
+      "codigoine": "1709",
+      "distrito_code": "17",
+      "distrito": "Vila Real",
+      "regiao": "Norte"
+    },
+    "sabrosa": {
+      "nome": "Sabrosa",
+      "codigoine": "1710",
+      "distrito_code": "17",
+      "distrito": "Vila Real",
+      "regiao": "Norte"
+    },
+    "santa marta de penaguião": {
+      "nome": "Santa Marta de Penaguião",
+      "codigoine": "1711",
+      "distrito_code": "17",
+      "distrito": "Vila Real",
+      "regiao": "Norte"
+    },
+    "valpaços": {
+      "nome": "Valpaços",
+      "codigoine": "1712",
+      "distrito_code": "17",
+      "distrito": "Vila Real",
+      "regiao": "Norte"
+    },
+    "vila pouca de aguiar": {
+      "nome": "Vila Pouca de Aguiar",
+      "codigoine": "1713",
+      "distrito_code": "17",
+      "distrito": "Vila Real",
+      "regiao": "Norte"
+    },
+    "vila real": {
+      "nome": "Vila Real",
+      "codigoine": "1714",
+      "distrito_code": "17",
+      "distrito": "Vila Real",
+      "regiao": "Norte"
+    },
+    "armamar": {
+      "nome": "Armamar",
+      "codigoine": "1801",
+      "distrito_code": "18",
+      "distrito": "Viseu",
+      "regiao": "Centro"
+    },
+    "carregal do sal": {
+      "nome": "Carregal do Sal",
+      "codigoine": "1802",
+      "distrito_code": "18",
+      "distrito": "Viseu",
+      "regiao": "Centro"
+    },
+    "castro daire": {
+      "nome": "Castro Daire",
+      "codigoine": "1803",
+      "distrito_code": "18",
+      "distrito": "Viseu",
+      "regiao": "Centro"
+    },
+    "cinfães": {
+      "nome": "Cinfães",
+      "codigoine": "1804",
+      "distrito_code": "18",
+      "distrito": "Viseu",
+      "regiao": "Centro"
+    },
+    "lamego": {
+      "nome": "Lamego",
+      "codigoine": "1805",
+      "distrito_code": "18",
+      "distrito": "Viseu",
+      "regiao": "Centro"
+    },
+    "mangualde": {
+      "nome": "Mangualde",
+      "codigoine": "1806",
+      "distrito_code": "18",
+      "distrito": "Viseu",
+      "regiao": "Centro"
+    },
+    "moimenta da beira": {
+      "nome": "Moimenta da Beira",
+      "codigoine": "1807",
+      "distrito_code": "18",
+      "distrito": "Viseu",
+      "regiao": "Centro"
+    },
+    "mortágua": {
+      "nome": "Mortágua",
+      "codigoine": "1808",
+      "distrito_code": "18",
+      "distrito": "Viseu",
+      "regiao": "Centro"
+    },
+    "nelas": {
+      "nome": "Nelas",
+      "codigoine": "1809",
+      "distrito_code": "18",
+      "distrito": "Viseu",
+      "regiao": "Centro"
+    },
+    "oliveira de frades": {
+      "nome": "Oliveira de Frades",
+      "codigoine": "1810",
+      "distrito_code": "18",
+      "distrito": "Viseu",
+      "regiao": "Centro"
+    },
+    "penalva do castelo": {
+      "nome": "Penalva do Castelo",
+      "codigoine": "1811",
+      "distrito_code": "18",
+      "distrito": "Viseu",
+      "regiao": "Centro"
+    },
+    "penedono": {
+      "nome": "Penedono",
+      "codigoine": "1812",
+      "distrito_code": "18",
+      "distrito": "Viseu",
+      "regiao": "Centro"
+    },
+    "resende": {
+      "nome": "Resende",
+      "codigoine": "1813",
+      "distrito_code": "18",
+      "distrito": "Viseu",
+      "regiao": "Centro"
+    },
+    "santa comba dão": {
+      "nome": "Santa Comba Dão",
+      "codigoine": "1814",
+      "distrito_code": "18",
+      "distrito": "Viseu",
+      "regiao": "Centro"
+    },
+    "são joão da pesqueira": {
+      "nome": "São João da Pesqueira",
+      "codigoine": "1815",
+      "distrito_code": "18",
+      "distrito": "Viseu",
+      "regiao": "Centro"
+    },
+    "são pedro do sul": {
+      "nome": "São Pedro do Sul",
+      "codigoine": "1816",
+      "distrito_code": "18",
+      "distrito": "Viseu",
+      "regiao": "Centro"
+    },
+    "sátão": {
+      "nome": "Sátão",
+      "codigoine": "1817",
+      "distrito_code": "18",
+      "distrito": "Viseu",
+      "regiao": "Centro"
+    },
+    "sernancelhe": {
+      "nome": "Sernancelhe",
+      "codigoine": "1818",
+      "distrito_code": "18",
+      "distrito": "Viseu",
+      "regiao": "Centro"
+    },
+    "tabuaço": {
+      "nome": "Tabuaço",
+      "codigoine": "1819",
+      "distrito_code": "18",
+      "distrito": "Viseu",
+      "regiao": "Centro"
+    },
+    "tarouca": {
+      "nome": "Tarouca",
+      "codigoine": "1820",
+      "distrito_code": "18",
+      "distrito": "Viseu",
+      "regiao": "Centro"
+    },
+    "tondela": {
+      "nome": "Tondela",
+      "codigoine": "1821",
+      "distrito_code": "18",
+      "distrito": "Viseu",
+      "regiao": "Centro"
+    },
+    "vila nova de paiva": {
+      "nome": "Vila Nova de Paiva",
+      "codigoine": "1822",
+      "distrito_code": "18",
+      "distrito": "Viseu",
+      "regiao": "Centro"
+    },
+    "viseu": {
+      "nome": "Viseu",
+      "codigoine": "1823",
+      "distrito_code": "18",
+      "distrito": "Viseu",
+      "regiao": "Centro"
+    },
+    "vouzela": {
+      "nome": "Vouzela",
+      "codigoine": "1824",
+      "distrito_code": "18",
+      "distrito": "Viseu",
+      "regiao": "Centro"
+    },
+    "alandroal": {
+      "nome": "Alandroal",
+      "codigoine": "0701",
+      "distrito_code": "07",
+      "distrito": "Évora",
+      "regiao": "Alentejo"
+    },
+    "arraiolos": {
+      "nome": "Arraiolos",
+      "codigoine": "0702",
+      "distrito_code": "07",
+      "distrito": "Évora",
+      "regiao": "Alentejo"
+    },
+    "borba": {
+      "nome": "Borba",
+      "codigoine": "0703",
+      "distrito_code": "07",
+      "distrito": "Évora",
+      "regiao": "Alentejo"
+    },
+    "estremoz": {
+      "nome": "Estremoz",
+      "codigoine": "0704",
+      "distrito_code": "07",
+      "distrito": "Évora",
+      "regiao": "Alentejo"
+    },
+    "évora": {
+      "nome": "Évora",
+      "codigoine": "0705",
+      "distrito_code": "07",
+      "distrito": "Évora",
+      "regiao": "Alentejo"
+    },
+    "montemor-o-novo": {
+      "nome": "Montemor-o-novo",
+      "codigoine": "0706",
+      "distrito_code": "07",
+      "distrito": "Évora",
+      "regiao": "Alentejo"
+    },
+    "mora": {
+      "nome": "Mora",
+      "codigoine": "0707",
+      "distrito_code": "07",
+      "distrito": "Évora",
+      "regiao": "Alentejo"
+    },
+    "mourão": {
+      "nome": "Mourão",
+      "codigoine": "0708",
+      "distrito_code": "07",
+      "distrito": "Évora",
+      "regiao": "Alentejo"
+    },
+    "portel": {
+      "nome": "Portel",
+      "codigoine": "0709",
+      "distrito_code": "07",
+      "distrito": "Évora",
+      "regiao": "Alentejo"
+    },
+    "redondo": {
+      "nome": "Redondo",
+      "codigoine": "0710",
+      "distrito_code": "07",
+      "distrito": "Évora",
+      "regiao": "Alentejo"
+    },
+    "reguengos de monsaraz": {
+      "nome": "Reguengos de Monsaraz",
+      "codigoine": "0711",
+      "distrito_code": "07",
+      "distrito": "Évora",
+      "regiao": "Alentejo"
+    },
+    "vendas novas": {
+      "nome": "Vendas Novas",
+      "codigoine": "0712",
+      "distrito_code": "07",
+      "distrito": "Évora",
+      "regiao": "Alentejo"
+    },
+    "viana do alentejo": {
+      "nome": "Viana do Alentejo",
+      "codigoine": "0713",
+      "distrito_code": "07",
+      "distrito": "Évora",
+      "regiao": "Alentejo"
+    },
+    "vila viçosa": {
+      "nome": "Vila Viçosa",
+      "codigoine": "0714",
+      "distrito_code": "07",
+      "distrito": "Évora",
+      "regiao": "Alentejo"
+    }
+  }
+}

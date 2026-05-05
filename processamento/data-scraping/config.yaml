@@ -1,0 +1,31 @@
+# News Collector Configuration
+# arquivo.pt + Wayback Machine + Live Site Sitemaps
+
+date_range:
+  from: 1996
+  to: 2026
+
+concurrency:
+  # arquivo.pt rate limits (permanent IP ban if exceeded!):
+  #   CDX API: 250 req/min
+  #   Bulk download (/wayback): 4000 req/min
+  # These limits are shared across all parallel sites (single rate limiter).
+  arquivo_cdx_max_per_minute: 200
+  arquivo_fetch_max_per_minute: 3000
+  arquivo: 50
+  # Wayback Machine CDX discovery (single IP, be conservative)
+  wayback_cdx: 1
+  wayback_cdx_delay_ms: 1500
+  # Wayback Machine page fetches (through rotating proxy = different IP per request)
+  wayback_fetch: 80
+  wayback_fetch_delay_ms: 0
+  # Live site fetching: respectful per-site
+  live: 50
+
+retry:
+  max_attempts: 5
+  backoff_base: 2
+
+timeout_seconds: 15
+output_dir: data
+min_text_length: 100

@@ -1,0 +1,108 @@
+{
+  "id": "desertos-de-noticias",
+  "title": "Desertos de Notícias",
+  "description": "Mapeamento das regiões com menor cobertura jornalística regional em Portugal.",
+  "backgroundColor": "#fff3e0",
+  "filters": {},
+  "steps": [
+    {
+      "id": "intro",
+      "type": "text",
+      "title": "Contexto",
+      "text": "Um \"deserto de notícias\" é uma região onde não existe cobertura jornalística local adequada. Em Portugal, o encerramento de jornais regionais nas últimas décadas tem deixado comunidades inteiras sem acesso a informação sobre a sua realidade local.\n\nEsta análise é uma exploração simplificada do tema com os dados que temos disponíveis. Para uma investigação aprofundada, recomendamos o livro <a href=\"https://labcom.ubi.pt/deserto-de-noticias-2025/\" target=\"_blank\">Deserto de Notícias (2025)</a> do LabCom.\n\nAqui, mapeamos a evolução do número de jornais online ativos e inativos ao longo do tempo, por distrito e município."
+    },
+    {
+      "id": "total-ativos",
+      "type": "split",
+      "layout": "viz-right",
+      "title": "Jornais ativos por ano",
+      "text": "O número total de jornais regionais registados e ativos em Portugal tem variado ao longo das últimas décadas. Este gráfico mostra quantos jornais estavam ativos em cada ano. Os dados para 2026 ainda estão incompletos, mas para já refletem o primeiro decrescimento em termos totais do número de jornais ativos, inversão que parece acompanhar a tendência de estagnação dos últimos 5 anos.",
+      "viz": {
+        "type": "desertos-timeline",
+        "caption": "Total de jornais regionais ativos por ano"
+      }
+    },
+    {
+      "id": "encerramentos",
+      "type": "split",
+      "layout": "viz-left",
+      "title": "Aberturas e encerramentos por ano",
+      "text": "Quantos jornais regionais abriram e quantos encerraram em cada ano? As barras verdes mostram novos registos e as laranjas os encerramentos, explicitando padrões de cada lado.",
+      "viz": {
+        "type": "desertos-closures",
+        "caption": "Aberturas (verde) e encerramentos (laranja) por ano"
+      }
+    },
+    {
+      "id": "mapa-distritos",
+      "type": "split",
+      "layout": "viz-right",
+      "title": "Evolução por distrito",
+      "text": "Lado a lado, a evolução do número de jornais ativos e dos que encerraram em cada distrito, ano a ano. Usa o botão de play para ver a dinâmica temporal.",
+      "viz": {
+        "type": "map-comparison",
+        "animated": true,
+        "hues": [210, 15],
+        "countLabel": "jornais",
+        "caption": "Jornais ativos (azul) vs. encerramentos (laranja) por distrito",
+        "series": [
+          {
+            "label": "Ativos",
+            "endpoint": "/api/analises/desertos-map",
+            "params": { "level": "distrito", "metric": "active" }
+          },
+          {
+            "label": "Encerramentos",
+            "endpoint": "/api/analises/desertos-map",
+            "params": { "level": "distrito", "metric": "inactive" }
+          }
+        ]
+      }
+    },
+    {
+      "id": "mapa-municipios",
+      "type": "split",
+      "layout": "viz-left",
+      "title": "Evolução por município",
+      "text": "A mesma análise ao nível do município revela com maior detalhe geográfico quais as zonas que perderam cobertura jornalística local.",
+      "viz": {
+        "type": "map-comparison",
+        "animated": true,
+        "hues": [210, 15],
+        "geojsonUrl": "/portugal-concelhos.json",
+        "labelField": "concelho",
+        "countLabel": "jornais",
+        "caption": "Jornais ativos (azul) vs. encerramentos (laranja) por município",
+        "series": [
+          {
+            "label": "Ativos",
+            "endpoint": "/api/analises/desertos-map",
+            "params": { "level": "municipio", "metric": "active" }
+          },
+          {
+            "label": "Encerramentos",
+            "endpoint": "/api/analises/desertos-map",
+            "params": { "level": "municipio", "metric": "inactive" }
+          }
+        ]
+      }
+    },
+    {
+      "id": "ratio",
+      "type": "split",
+      "layout": "viz-left",
+      "title": "Artigos por jornal ativo",
+      "text": "Dividindo o total de artigos publicados pelo número de jornais ativos em cada ano, obtemos uma medida de produtividade média. Este indicador revela se a produção noticiosa acompanha ou não o número de publicações existentes.",
+      "viz": {
+        "type": "desertos-ratio",
+        "caption": "Artigos publicados por jornal ativo, por ano"
+      }
+    },
+    {
+      "id": "conclusao",
+      "type": "text",
+      "title": "Conclusões",
+      "text": "Os nossos dados confirmam a existência de assimetrias significativas na cobertura jornalística regional. As regiões do interior, já afetadas pela desertificação populacional, enfrentam também uma desertificação informativa. "
+    }
+  ]
+}

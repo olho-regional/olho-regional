@@ -1,0 +1,4 @@
+{$DOMAIN} {
+	tls /etc/caddy/certs/origin.pem /etc/caddy/certs/origin-key.pem
+	reverse_proxy sqld:8080
+}

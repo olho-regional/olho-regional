@@ -1,0 +1,20 @@
+[
+  {
+    "id": "desertos-de-noticias",
+    "title": "Desertos de Notícias",
+    "description": "Mapeamento das regiões com menor cobertura jornalística regional em Portugal.",
+    "backgroundColor": "#fff3e0"
+  },
+  {
+    "id": "genero-fontes-citadas",
+    "title": "Desequilíbrio de Género nas Fontes",
+    "description": "Análise da representação de género nas fontes citadas pela imprensa regional portuguesa.",
+    "backgroundColor": "#fce4ec"
+  },
+  {
+    "id": "gastronomia-regional",
+    "title": "Gastronomia e Produtos Locais no Mapa",
+    "description": "Onde se fala de cada produto regional? Mapas comparativos da cobertura de pratos e produtos típicos portugueses.",
+    "backgroundColor": "#e8f5e9"
+  }
+]

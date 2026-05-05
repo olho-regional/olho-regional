@@ -1,0 +1,5 @@
+*.db
+*.db-journal
+*.sql
+*.csv
+*.sh

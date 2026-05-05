@@ -1,0 +1,33 @@
+{
+  "name": "olho-regional",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "rm -rf .nuxt/cache && nuxt dev",
+    "build": "nuxt build",
+    "preview": "nuxt build && wrangler pages dev dist",
+    "db:deploy:turso": "sqlite3 ../processamento/database/olho-regional.db 'PRAGMA journal_mode=WAL;' && turso db destroy olho-regional -y && turso db create olho-regional --from-file ../processamento/database/olho-regional.db --location aws-eu-west-1 && turso db tokens create olho-regional | wrangler pages secret put TURSO_AUTH_TOKEN --project-name olho-regional",
+    "db:deploy:vps": "../backend/upload-db.sh",
+    "db:stats": "sqlite3 ../processamento/database/olho-regional.db \"SELECT 'Total rows: ' || sum(cnt) FROM (SELECT count(*) as cnt FROM noticias UNION ALL SELECT count(*) FROM jornais UNION ALL SELECT count(*) FROM noticias_labels UNION ALL SELECT count(*) FROM noticias_entities UNION ALL SELECT count(*) FROM quotes UNION ALL SELECT count(*) FROM labels UNION ALL SELECT count(*) FROM entities UNION ALL SELECT count(*) FROM distritos UNION ALL SELECT count(*) FROM municipios UNION ALL SELECT count(*) FROM jornais_distritos UNION ALL SELECT count(*) FROM jornais_municipios);\"",
+    "deploy": "bash scripts/deploy.sh",
+    "analises:compile": "npx tsx scripts/compile-analises.ts"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.17.3",
+    "drizzle-orm": "^0.45.2",
+    "echarts": "^6.0.0",
+    "gsap": "^3.15.0",
+    "nuxt": "^4.4.2",
+    "vue": "^3.5.33",
+    "vue-echarts": "^8.0.1",
+    "vue-router": "^5.0.6",
+    "vuetify": "3",
+    "vuetify-nuxt-module": "^0.19.5"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.31.10",
+    "sass": "^1.99.0",
+    "typescript": "^6.0.3",
+    "wrangler": "^4.85.0"
+  }
+}

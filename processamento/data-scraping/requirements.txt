@@ -1,0 +1,6 @@
+httpx[http2,socks]
+trafilatura
+rich
+pyyaml
+beautifulsoup4
+lxml

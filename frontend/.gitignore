@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+
+# Nuxt
+.nuxt/
+.output/
+dist/
+
+# Wrangler local D1 data
+.wrangler/
+
+# Generated SQL dump
+scripts/olho-regional.sql
+scripts/sql_chunks/
+
+# Environment
+.env
+
+# IDE
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Yarn
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+
+db
+erc-for-viz.csv
