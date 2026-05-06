@@ -131,10 +131,20 @@ export default defineEventHandler(async (event) => {
 
   // Dev mode: compile on the fly from source
   const publicDir = join(process.cwd(), 'public', 'analises')
-  const sourcePath = join(publicDir, `${id}.json`)
+  let sourcePath = join(publicDir, `${id}.json`)
   let devMode = false
   try {
-    devMode = existsSync(sourcePath)
+    if (existsSync(sourcePath)) {
+      devMode = true
+    } else {
+      // Filename may have a numeric prefix (e.g. 03-gastronomia-regional.json)
+      const { readdirSync } = await import('fs')
+      const match = readdirSync(publicDir).find(f => f.endsWith(`-${id}.json`))
+      if (match) {
+        sourcePath = join(publicDir, match)
+        devMode = true
+      }
+    }
   } catch {
     // fs not available on edge
   }

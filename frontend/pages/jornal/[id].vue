@@ -38,8 +38,8 @@
           <v-card-text class="pa-6 pb-2">
             <v-row>
               <v-col cols="4" class="text-center">
-                <div class="text-h5 font-weight-bold text-primary">{{ jornal.totalArticles?.toLocaleString() ?? 0 }}</div>
-                <div class="text-caption text-medium-emphasis">Artigos</div>
+                <div class="text-h5 font-weight-bold text-primary" style="font-family: inherit !important">{{ jornal.totalArticles?.toLocaleString() ?? 0 }}</div>
+                <div class="text-caption text-medium-emphasis">Notícias</div>
               </v-col>
               <v-col cols="4" class="text-center">
                 <div class="text-h6 font-weight-medium">{{ jornal.oldestDate ?? '—' }}</div>
