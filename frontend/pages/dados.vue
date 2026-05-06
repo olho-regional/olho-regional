@@ -187,8 +187,8 @@
           <v-divider class="my-4" />
           <h3 class="text-h6 mb-2">Licença</h3>
           <p class="text-body-2">
-            Este projeto está licenciado sob a <strong>MIT License</strong>. <br />Qualquer um pode usar, copiar,
-            modificar e distribuir o código livremente, desde que mantenha a atribuição original. <br />
+            Este projeto está licenciado sob a <a href="https://creativecommons.org/licenses/by/4.0/deed.pt" target="_blank"><strong>Creative Commons Atribuição 4.0 Internacional (CC BY 4.0)</strong></a>. <br />Qualquer um pode usar, copiar,
+            modificar e distribuir livremente, desde que dê o crédito apropriado. <br />
             Os dados recolhidos estão sujeitos aos termos de uso das fontes originais.
           </p>
         </v-card-text>
