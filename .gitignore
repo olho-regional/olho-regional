@@ -4,6 +4,7 @@ __pycache__
 *.DS_Store
 */data/*
 *.db
+!dados/olho-regional-lite.db
 .wrangler/*
 *.db-shm
 *.db-wal
@@ -12,9 +13,3 @@ backend/certs/
 backend/jwt-private.pem
 backend/jwt-public.pem
 processamento/identificar-jornais
-
-
-
-# temp TODO
-README.md
-*ongoing.md

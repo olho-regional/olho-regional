@@ -2,7 +2,7 @@
   <v-container>
     <h1 class="text-h4 mb-2">Casos de Estudo</h1>
     <p class="text-body-1 text-medium-emphasis mb-6">
-      Uma Coletânea em crescimento, aqui encontras análises realizadas sobre os dados recolhidos, convidamos a comunidade a fazer novas sugestões ou mesmo partilhar resultados que queiram incluir nesta páginas.
+      Uma coletânea em crescimento, aqui encontras análises realizadas sobre os dados recolhidos, convidamos a comunidade a fazer novas sugestões ou mesmo partilhar resultados que queiram incluir nesta páginas.
     </p>
 
     <v-row>
@@ -41,7 +41,7 @@
           class="d-flex flex-column"
           height="100%"
           variant="outlined"
-          href="https://github.com/msramalho/olho-regional/issues"
+          href="https://github.com/olho-regional/olho-regional/issues"
           target="_blank"
           rel="noopener"
         >
