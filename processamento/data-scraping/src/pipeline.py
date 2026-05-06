@@ -17,7 +17,7 @@ from .utils import RateLimiter, domain_from_url, get_data_dir, normalize_url
 logger = logging.getLogger(__name__)
 
 FLUSH_INTERVAL = 50  # Flush to disk every N articles
-USER_AGENT = "olho-regional/1.0 (news-archive-research; +https://github.com/msramalho/olho-regional)"
+USER_AGENT = "olho-regional/1.0 (news-archive-research; +https://github.com/olho-regional/olho-regional)"
 
 
 class TimeoutManager:

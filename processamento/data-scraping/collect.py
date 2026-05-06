@@ -180,7 +180,7 @@ async def _show_oldest(sites: list[str], config: dict):
     from rich.console import Console
     from rich.table import Table
 
-    USER_AGENT = "olho-regional/1.0 (news-archive-research; +https://github.com/msramalho/olho-regional)"
+    USER_AGENT = "olho-regional/1.0 (news-archive-research; +https://github.com/olho-regional/olho-regional)"
     console = Console()
 
     table = Table(title="Oldest CDX Record per Site")
