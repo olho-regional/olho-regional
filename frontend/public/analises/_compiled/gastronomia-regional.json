@@ -1,0 +1,623 @@
+{
+  "id": "gastronomia-regional",
+  "title": "Gastronomia e Produtos Locais no Mapa",
+  "description": "Onde se fala de cada produto regional? Mapas comparativos da cobertura de pratos e produtos típicos portugueses.",
+  "backgroundColor": "#e8f5e9",
+  "stats": [
+    {
+      "label": "Artigos",
+      "value": "847 167"
+    },
+    {
+      "label": "Jornais",
+      "value": 431
+    }
+  ],
+  "steps": [
+    {
+      "id": "intro",
+      "type": "text",
+      "title": "Contexto",
+      "text": "Portugal tem uma tradição gastronómica deliciosa, com produtos e pratos típicos enraizados nas identidades regionais. A imprensa regional reflete essa ligação ao território, noticiando feiras, festivais e a produção local.\n\nNesta análise, comparamos a distribuição geográfica da cobertura de diferentes pratos e produtos típicos portugueses."
+    },
+    {
+      "id": "produtos",
+      "type": "grid",
+      "title": "Produtos e Pratos Típicos",
+      "items": [
+        {
+          "label": "Maranho",
+          "link": "https://pt.wikipedia.org/wiki/Maranho",
+          "viz": {
+            "type": "map",
+            "data": [
+              {
+                "name": "Castelo Branco",
+                "count": 173
+              },
+              {
+                "name": "Santarém",
+                "count": 90
+              },
+              {
+                "name": "Coimbra",
+                "count": 18
+              },
+              {
+                "name": "Leiria",
+                "count": 12
+              },
+              {
+                "name": "Aveiro",
+                "count": 8
+              },
+              {
+                "name": "Lisboa",
+                "count": 5
+              },
+              {
+                "name": "Viseu",
+                "count": 4
+              },
+              {
+                "name": "Guarda",
+                "count": 4
+              },
+              {
+                "name": "Portalegre",
+                "count": 1
+              },
+              {
+                "name": "Faro",
+                "count": 1
+              }
+            ]
+          }
+        },
+        {
+          "label": "Poncha",
+          "link": "https://pt.wikipedia.org/wiki/Poncha",
+          "viz": {
+            "type": "map",
+            "data": [
+              {
+                "name": "Ilha da Madeira",
+                "count": 45
+              },
+              {
+                "name": "Ilha de Porto Santo",
+                "count": 25
+              },
+              {
+                "name": "Lisboa",
+                "count": 13
+              },
+              {
+                "name": "Viana do Castelo",
+                "count": 7
+              },
+              {
+                "name": "Braga",
+                "count": 7
+              },
+              {
+                "name": "Ilha do Pico",
+                "count": 4
+              },
+              {
+                "name": "Ilha do Faial",
+                "count": 4
+              },
+              {
+                "name": "Ilha do Corvo",
+                "count": 4
+              },
+              {
+                "name": "Ilha de São Miguel",
+                "count": 4
+              },
+              {
+                "name": "Ilha de São Jorge",
+                "count": 4
+              },
+              {
+                "name": "Ilha de Santa Maria",
+                "count": 4
+              },
+              {
+                "name": "Ilha da Graciosa",
+                "count": 4
+              },
+              {
+                "name": "Ilha Terceira",
+                "count": 4
+              },
+              {
+                "name": "Ilha Das Flores",
+                "count": 4
+              },
+              {
+                "name": "Coimbra",
+                "count": 3
+              },
+              {
+                "name": "Leiria",
+                "count": 2
+              },
+              {
+                "name": "Viseu",
+                "count": 1
+              },
+              {
+                "name": "Vila Real",
+                "count": 1
+              },
+              {
+                "name": "Setúbal",
+                "count": 1
+              },
+              {
+                "name": "Santarém",
+                "count": 1
+              },
+              {
+                "name": "Porto",
+                "count": 1
+              },
+              {
+                "name": "Faro",
+                "count": 1
+              },
+              {
+                "name": "Bragança",
+                "count": 1
+              },
+              {
+                "name": "Aveiro",
+                "count": 1
+              }
+            ]
+          }
+        },
+        {
+          "label": "Butelo",
+          "link": "https://pt.wikipedia.org/wiki/Butelo",
+          "viz": {
+            "type": "map",
+            "data": [
+              {
+                "name": "Bragança",
+                "count": 45
+              },
+              {
+                "name": "Vila Real",
+                "count": 24
+              },
+              {
+                "name": "Guarda",
+                "count": 12
+              },
+              {
+                "name": "Viseu",
+                "count": 5
+              },
+              {
+                "name": "Porto",
+                "count": 3
+              },
+              {
+                "name": "Santarém",
+                "count": 2
+              },
+              {
+                "name": "Aveiro",
+                "count": 2
+              },
+              {
+                "name": "Évora",
+                "count": 1
+              },
+              {
+                "name": "Viana do Castelo",
+                "count": 1
+              },
+              {
+                "name": "Coimbra",
+                "count": 1
+              },
+              {
+                "name": "Castelo Branco",
+                "count": 1
+              },
+              {
+                "name": "Braga",
+                "count": 1
+              }
+            ]
+          }
+        },
+        {
+          "label": "Fogaça",
+          "link": "https://pt.wikipedia.org/wiki/Foga%C3%A7a_da_Feira",
+          "viz": {
+            "type": "map",
+            "data": [
+              {
+                "name": "Aveiro",
+                "count": 175
+              },
+              {
+                "name": "Braga",
+                "count": 58
+              },
+              {
+                "name": "Setúbal",
+                "count": 38
+              },
+              {
+                "name": "Lisboa",
+                "count": 33
+              },
+              {
+                "name": "Viana do Castelo",
+                "count": 21
+              },
+              {
+                "name": "Vila Real",
+                "count": 20
+              },
+              {
+                "name": "Porto",
+                "count": 20
+              },
+              {
+                "name": "Santarém",
+                "count": 19
+              },
+              {
+                "name": "Bragança",
+                "count": 19
+              },
+              {
+                "name": "Leiria",
+                "count": 14
+              },
+              {
+                "name": "Coimbra",
+                "count": 12
+              },
+              {
+                "name": "Évora",
+                "count": 9
+              },
+              {
+                "name": "Portalegre",
+                "count": 3
+              },
+              {
+                "name": "Beja",
+                "count": 3
+              },
+              {
+                "name": "Faro",
+                "count": 2
+              },
+              {
+                "name": "Castelo Branco",
+                "count": 2
+              },
+              {
+                "name": "Viseu",
+                "count": 1
+              }
+            ]
+          }
+        },
+        {
+          "label": "Pastéis de Tentúgal",
+          "link": "https://pt.wikipedia.org/wiki/Past%C3%A9is_de_Tent%C3%BAgal",
+          "viz": {
+            "type": "map",
+            "data": [
+              {
+                "name": "Coimbra",
+                "count": 38
+              },
+              {
+                "name": "Leiria",
+                "count": 11
+              },
+              {
+                "name": "Aveiro",
+                "count": 8
+              },
+              {
+                "name": "Guarda",
+                "count": 4
+              },
+              {
+                "name": "Viseu",
+                "count": 3
+              },
+              {
+                "name": "Santarém",
+                "count": 3
+              },
+              {
+                "name": "Castelo Branco",
+                "count": 3
+              },
+              {
+                "name": "Ilha do Pico",
+                "count": 1
+              },
+              {
+                "name": "Ilha do Faial",
+                "count": 1
+              },
+              {
+                "name": "Ilha do Corvo",
+                "count": 1
+              },
+              {
+                "name": "Ilha de São Miguel",
+                "count": 1
+              },
+              {
+                "name": "Ilha de São Jorge",
+                "count": 1
+              },
+              {
+                "name": "Ilha de Santa Maria",
+                "count": 1
+              },
+              {
+                "name": "Ilha da Graciosa",
+                "count": 1
+              },
+              {
+                "name": "Ilha Terceira",
+                "count": 1
+              },
+              {
+                "name": "Ilha Das Flores",
+                "count": 1
+              },
+              {
+                "name": "Beja",
+                "count": 1
+              }
+            ]
+          }
+        },
+        {
+          "label": "Xarém",
+          "link": "https://pt.wikipedia.org/wiki/Xer%C3%A9m_(culin%C3%A1ria)",
+          "viz": {
+            "type": "map",
+            "data": [
+              {
+                "name": "Faro",
+                "count": 21
+              },
+              {
+                "name": "Ilha do Pico",
+                "count": 4
+              },
+              {
+                "name": "Ilha do Faial",
+                "count": 4
+              },
+              {
+                "name": "Ilha do Corvo",
+                "count": 4
+              },
+              {
+                "name": "Ilha de São Miguel",
+                "count": 4
+              },
+              {
+                "name": "Ilha de São Jorge",
+                "count": 4
+              },
+              {
+                "name": "Ilha de Santa Maria",
+                "count": 4
+              },
+              {
+                "name": "Ilha da Graciosa",
+                "count": 4
+              },
+              {
+                "name": "Ilha Terceira",
+                "count": 4
+              },
+              {
+                "name": "Ilha Das Flores",
+                "count": 4
+              },
+              {
+                "name": "Coimbra",
+                "count": 3
+              },
+              {
+                "name": "Lisboa",
+                "count": 1
+              },
+              {
+                "name": "Leiria",
+                "count": 1
+              }
+            ]
+          }
+        },
+        {
+          "label": "Bolo Lêvedo",
+          "link": "https://pt.wikipedia.org/wiki/Bolo_l%C3%AAvedo",
+          "viz": {
+            "type": "map",
+            "data": [
+              {
+                "name": "Ilha do Pico",
+                "count": 16
+              },
+              {
+                "name": "Ilha do Faial",
+                "count": 16
+              },
+              {
+                "name": "Ilha do Corvo",
+                "count": 16
+              },
+              {
+                "name": "Ilha de São Miguel",
+                "count": 16
+              },
+              {
+                "name": "Ilha de São Jorge",
+                "count": 16
+              },
+              {
+                "name": "Ilha de Santa Maria",
+                "count": 16
+              },
+              {
+                "name": "Ilha da Graciosa",
+                "count": 16
+              },
+              {
+                "name": "Ilha Terceira",
+                "count": 16
+              },
+              {
+                "name": "Ilha Das Flores",
+                "count": 16
+              },
+              {
+                "name": "Lisboa",
+                "count": 1
+              },
+              {
+                "name": "Leiria",
+                "count": 1
+              },
+              {
+                "name": "Coimbra",
+                "count": 1
+              }
+            ]
+          }
+        },
+        {
+          "label": "Bolo do Caco",
+          "link": "https://pt.wikipedia.org/wiki/Bolo_do_caco",
+          "viz": {
+            "type": "map",
+            "data": [
+              {
+                "name": "Ilha da Madeira",
+                "count": 23
+              },
+              {
+                "name": "Ilha de Porto Santo",
+                "count": 12
+              },
+              {
+                "name": "Porto",
+                "count": 11
+              },
+              {
+                "name": "Braga",
+                "count": 11
+              },
+              {
+                "name": "Lisboa",
+                "count": 10
+              },
+              {
+                "name": "Viana do Castelo",
+                "count": 8
+              },
+              {
+                "name": "Ilha de São Miguel",
+                "count": 8
+              },
+              {
+                "name": "Coimbra",
+                "count": 8
+              },
+              {
+                "name": "Ilha do Pico",
+                "count": 6
+              },
+              {
+                "name": "Ilha do Faial",
+                "count": 6
+              },
+              {
+                "name": "Ilha do Corvo",
+                "count": 6
+              },
+              {
+                "name": "Ilha de São Jorge",
+                "count": 6
+              },
+              {
+                "name": "Ilha de Santa Maria",
+                "count": 6
+              },
+              {
+                "name": "Ilha da Graciosa",
+                "count": 6
+              },
+              {
+                "name": "Ilha Terceira",
+                "count": 6
+              },
+              {
+                "name": "Ilha Das Flores",
+                "count": 6
+              },
+              {
+                "name": "Faro",
+                "count": 5
+              },
+              {
+                "name": "Vila Real",
+                "count": 4
+              },
+              {
+                "name": "Setúbal",
+                "count": 4
+              },
+              {
+                "name": "Bragança",
+                "count": 2
+              },
+              {
+                "name": "Évora",
+                "count": 1
+              },
+              {
+                "name": "Viseu",
+                "count": 1
+              },
+              {
+                "name": "Leiria",
+                "count": 1
+              },
+              {
+                "name": "Beja",
+                "count": 1
+              },
+              {
+                "name": "Aveiro",
+                "count": 1
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

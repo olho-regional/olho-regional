@@ -32,18 +32,12 @@
       <v-col cols="12" md="2">
         <v-autocomplete
           v-model="selectedJornal"
-          :items="jornalOptions"
-          :loading="jornalOptionsLoading"
-          item-title="name"
-          item-value="name"
+          :items="filteredJornalOptions"
           label="Jornal"
           variant="outlined"
           density="comfortable"
           clearable
           hide-details
-          @update:search="onJornalSearch"
-          no-filter
-          :no-data-text="jornalSearchQuery ? 'Sem resultados' : 'Escreve para procurar'"
         />
       </v-col>
       <v-col cols="12" md="2">
@@ -718,23 +712,30 @@ const selectedDistritoName = computed(() =>
   distritosOptions.value.find(d => d.codigoine === selectedDistrito.value)?.nome ?? selectedDistrito.value
 )
 
-// --- Autocomplete: Jornal ---
-const jornalOptions = ref<{ name: string; count: number }[]>([])
-const jornalOptionsLoading = ref(false)
-const jornalSearchQuery = ref('')
-let jornalDebounce: ReturnType<typeof setTimeout> | null = null
-function onJornalSearch(q: string) {
-  jornalSearchQuery.value = q || ''
-  if (jornalDebounce) clearTimeout(jornalDebounce)
-  if (!q || q.length < 1) { jornalOptions.value = []; return }
-  jornalOptionsLoading.value = true
-  jornalDebounce = setTimeout(async () => {
-    try {
-      jornalOptions.value = await $fetch<{ name: string; count: number }[]>('/api/noticias/autocomplete', { query: { field: 'jornal', q, ...(selectedDistrito.value ? { distrito: selectedDistrito.value } : {}) } })
-    } catch { jornalOptions.value = [] }
-    jornalOptionsLoading.value = false
-  }, 300)
-}
+// --- Jornal options (full list, filtered by distrito) ---
+const { data: jornaisByDistrict } = useFetch<Record<string, { nome: string; url: string | null }[]>>('/api/jornais/by-district')
+const filteredJornalOptions = computed(() => {
+  const data = jornaisByDistrict.value
+  if (!data) return []
+  if (selectedDistrito.value) {
+    const distritoName = distritosOptions.value.find(d => d.codigoine === selectedDistrito.value)?.nome
+    if (distritoName && data[distritoName]) {
+      return data[distritoName].map(j => j.nome).sort()
+    }
+    return []
+  }
+  // No distrito selected: show all jornais
+  const all = new Set<string>()
+  for (const jornais of Object.values(data)) {
+    for (const j of jornais) all.add(j.nome)
+  }
+  return [...all].sort()
+})
+watch(selectedDistrito, () => {
+  if (selectedJornal.value && !filteredJornalOptions.value.includes(selectedJornal.value)) {
+    selectedJornal.value = null
+  }
+})
 
 // --- Autocomplete: Author ---
 const authorOptions = ref<{ name: string; count: number }[]>([])

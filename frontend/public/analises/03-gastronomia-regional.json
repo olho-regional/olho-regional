@@ -9,83 +9,62 @@
       "id": "intro",
       "type": "text",
       "title": "Contexto",
-      "text": "Portugal tem uma tradição gastronómica rica e diversa, com produtos e pratos típicos profundamente enraizados nas identidades regionais. A imprensa regional reflete essa ligação ao território, noticiando feiras, festivais e a produção local.\n\nNesta análise, comparamos a distribuição geográfica da cobertura de diferentes produtos e pratos típicos portugueses."
+      "text": "Portugal tem uma tradição gastronómica deliciosa, com produtos e pratos típicos enraizados nas identidades regionais. A imprensa regional reflete essa ligação ao território, noticiando feiras, festivais e a produção local.\n\nNesta análise, comparamos a distribuição geográfica da cobertura de diferentes pratos e produtos típicos portugueses."
     },
     {
-      "id": "vinho",
-      "type": "split",
-      "layout": "viz-left",
-      "title": "Vinho",
-      "text": "O vinho é um dos produtos mais emblemáticos de Portugal, com regiões demarcadas de norte a sul. A cobertura jornalística reflete a importância económica e cultural da vitivinicultura em cada região.",
-      "filters": {
-        "search": "vinho"
-      },
-      "viz": {
-        "type": "map",
-        "caption": "Artigos que mencionam \"vinho\" por distrito"
-      }
-    },
-    {
-      "id": "azeite",
-      "type": "split",
-      "layout": "viz-right",
-      "title": "Azeite",
-      "text": "O azeite é um dos pilares da agricultura do interior, especialmente em Trás-os-Montes e no Alentejo. A sua presença na imprensa regional acompanha a geografia da produção.",
-      "filters": {
-        "search": "azeite"
-      },
-      "viz": {
-        "type": "map",
-        "caption": "Artigos que mencionam \"azeite\" por distrito"
-      }
-    },
-    {
-      "id": "queijo",
-      "type": "split",
-      "layout": "viz-left",
-      "title": "Queijo",
-      "text": "Dos queijos da Serra da Estrela aos de Serpa e Azeitão, Portugal tem uma tradição queijeira diversa. Onde se fala mais de queijo na imprensa regional?",
-      "filters": {
-        "search": "queijo"
-      },
-      "viz": {
-        "type": "map",
-        "caption": "Artigos que mencionam \"queijo\" por distrito"
-      }
-    },
-    {
-      "id": "bacalhau",
-      "type": "split",
-      "layout": "viz-right",
-      "title": "Bacalhau",
-      "text": "O bacalhau é o prato nacional por excelência, mas a sua presença na imprensa regional distribui-se de forma desigual pelo território.",
-      "filters": {
-        "search": "bacalhau"
-      },
-      "viz": {
-        "type": "map",
-        "caption": "Artigos que mencionam \"bacalhau\" por distrito"
-      }
-    },
-    {
-      "id": "enchidos",
-      "type": "split",
-      "layout": "viz-left",
-      "title": "Enchidos",
-      "text": "Alheiras, chouriças, farinheiras — os enchidos são um produto do interior, com forte presença nas feiras e festivais gastronómicos regionais.",
-      "filters": {
-        "search": "enchidos"
-      },
-      "viz": {
-        "type": "map",
-        "caption": "Artigos que mencionam \"enchidos\" por distrito"
-      }
-    },
-    {
-      "id": "conclusao",
-      "type": "text",
-      "title": "Conclusões",
-      "text": "A geografia gastronómica de Portugal está claramente refletida na imprensa regional. Cada produto conta uma história de terroir e identidade local, com a cobertura jornalística a acompanhar os territórios de produção e as tradições culinárias de cada região."
+      "id": "produtos",
+      "type": "grid",
+      "title": "Produtos e Pratos Típicos",
+      "items": [
+        {
+          "label": "Maranho",
+          "link": "https://pt.wikipedia.org/wiki/Maranho",
+          "filters": { "search": "maranho" },
+          "viz": { "type": "map" }
+        },
+        {
+          "label": "Poncha",
+          "link": "https://pt.wikipedia.org/wiki/Poncha",
+          "filters": { "search": "poncha" },
+          "viz": { "type": "map" }
+        },
+        {
+          "label": "Butelo",
+          "link": "https://pt.wikipedia.org/wiki/Butelo",
+          "filters": { "search": "butelo" },
+          "viz": { "type": "map" }
+        },
+        {
+          "label": "Fogaça",
+          "link": "https://pt.wikipedia.org/wiki/Foga%C3%A7a_da_Feira",
+          "filters": { "search": "fogaça" },
+          "viz": { "type": "map" }
+        },
+        {
+          "label": "Pastéis de Tentúgal",
+          "link": "https://pt.wikipedia.org/wiki/Past%C3%A9is_de_Tent%C3%BAgal",
+          "filters": { "search": "pastéis de tentúgal" },
+          "viz": { "type": "map" }
+        },
+        {
+          "label": "Xarém",
+          "link": "https://pt.wikipedia.org/wiki/Xer%C3%A9m_(culin%C3%A1ria)",
+          "filters": { "search": "xarém" },
+          "viz": { "type": "map" }
+        },
+        {
+          "label": "Bolo Lêvedo",
+          "link": "https://pt.wikipedia.org/wiki/Bolo_l%C3%AAvedo",
+          "filters": { "search": "bolo lêvedo" },
+          "viz": { "type": "map" }
+        },
+        {
+          "label": "Bolo do Caco",
+          "link": "https://pt.wikipedia.org/wiki/Bolo_do_caco",
+          "filters": { "search": "bolo do caco" },
+          "viz": { "type": "map" }
+        }
+      ]
     }
   ]
 }

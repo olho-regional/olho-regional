@@ -41,9 +41,6 @@
           class="d-flex flex-column"
           height="100%"
           variant="outlined"
-          href="https://github.com/olho-regional/olho-regional/issues"
-          target="_blank"
-          rel="noopener"
         >
           <div
             class="d-flex align-end pa-4"
@@ -61,8 +58,21 @@
               color="grey-darken-2"
               variant="outlined"
               prepend-icon="mdi-github"
+              href="https://github.com/olho-regional/olho-regional/issues"
+              target="_blank"
+              rel="noopener"
             >
               GitHub
+            </v-btn>
+            <v-btn
+              color="grey-darken-2"
+              variant="outlined"
+              prepend-icon="mdi-form-select"
+              href="https://forms.gle/9CSspUsSFGp9r7PQ8"
+              target="_blank"
+              rel="noopener"
+            >
+              Formulário
             </v-btn>
           </v-card-actions>
         </v-card>
