@@ -30,9 +30,12 @@ export default defineEventHandler(async (event) => {
     // Edge runtime: no fs, fetch from static asset
   }
 
-  // Production (Cloudflare Pages): fetch the static compiled index
-  const url = getRequestURL(event)
-  const baseUrl = `${url.protocol}//${url.host}`
-  const data = await $fetch(`${baseUrl}/analises/_compiled/_index.json`)
-  return data
+  // Production (Cloudflare Pages): read from static assets via ASSETS binding
+  const env = (event.context.cloudflare?.env) || (globalThis as any).__env__
+  if (env?.ASSETS) {
+    const url = new URL('/analises/_compiled/_index.json', getRequestURL(event))
+    const res = await env.ASSETS.fetch(new Request(url.toString()))
+    if (res.ok) return res.json()
+  }
+  throw createError({ statusCode: 404, statusMessage: 'Analyses not found' })
 })

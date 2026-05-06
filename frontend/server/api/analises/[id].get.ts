@@ -150,14 +150,14 @@ export default defineEventHandler(async (event) => {
   }
 
   if (!devMode) {
-    // Production (Cloudflare Pages): fetch the static compiled file
-    const url = getRequestURL(event)
-    const baseUrl = `${url.protocol}//${url.host}`
-    try {
-      return await $fetch(`${baseUrl}/analises/_compiled/${id}.json`)
-    } catch {
-      throw createError({ statusCode: 404, statusMessage: `Analysis not found: ${id}` })
+    // Production (Cloudflare Pages): read from static assets via ASSETS binding
+    const env = (event.context.cloudflare?.env) || (globalThis as any).__env__
+    if (env?.ASSETS) {
+      const url = new URL(`/analises/_compiled/${id}.json`, getRequestURL(event))
+      const res = await env.ASSETS.fetch(new Request(url.toString()))
+      if (res.ok) return res.json()
     }
+    throw createError({ statusCode: 404, statusMessage: `Analysis not found: ${id}` })
   }
 
   const source: AnaliseSource = JSON.parse(readFileSync(sourcePath, 'utf-8'))
@@ -194,6 +194,17 @@ export default defineEventHandler(async (event) => {
         compiledVizzes.push(await compileViz(event, viz, vizFilters))
       }
       compiledSteps.push({ id: step.id, type: step.type, title: step.title, text: step.text, vizzes: compiledVizzes })
+      continue
+    }
+
+    if (step.type === 'grid' && step.items) {
+      const compiledItems = []
+      for (const item of step.items as any[]) {
+        const vizFilters = mergeFilters(stepFilters, item.filters)
+        const compiled = await compileViz(event, item.viz, vizFilters)
+        compiledItems.push({ label: item.label, link: item.link, viz: compiled })
+      }
+      compiledSteps.push({ id: step.id, type: step.type, title: step.title, text: step.text, items: compiledItems })
       continue
     }
 

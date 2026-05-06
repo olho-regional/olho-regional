@@ -290,6 +290,23 @@ async function compileAnalise(source: AnaliseSource) {
       continue
     }
 
+    if (step.type === 'grid' && step.items) {
+      const compiledItems = []
+      for (const item of step.items) {
+        const vizFilters = mergeFilters(stepFilters, item.filters)
+        const compiled = await compileViz(item.viz, vizFilters)
+        compiledItems.push({ label: item.label, link: item.link, viz: compiled })
+      }
+      compiledSteps.push({
+        id: step.id,
+        type: step.type,
+        title: step.title,
+        text: step.text,
+        items: compiledItems,
+      })
+      continue
+    }
+
     // Fallback: pass through
     compiledSteps.push({ id: step.id, type: step.type, title: step.title, text: step.text })
   }
@@ -322,9 +339,10 @@ async function main() {
 
     try {
       const compiled = await compileAnalise(source)
-      const outPath = join(COMPILED_DIR, file)
+      const outFile = `${source.id}.json`
+      const outPath = join(COMPILED_DIR, outFile)
       writeFileSync(outPath, JSON.stringify(compiled, null, 2))
-      console.log(`  ✓ Written: _compiled/${file}`)
+      console.log(`  ✓ Written: _compiled/${outFile}`)
 
       index.push({
         id: source.id,

@@ -47,6 +47,31 @@
         </v-col>
       </v-row>
     </div>
+
+    <!-- Type 4: Grid of small vizzes -->
+    <div v-else-if="step.type === 'grid'">
+      <h2 v-if="step.title" class="text-h5 font-weight-bold mb-4">{{ step.title }}</h2>
+      <div v-if="step.text" class="text-body-1 analise-step__prose mb-4" v-html="renderedText" />
+      <v-row>
+        <v-col
+          v-for="(item, i) in step.items"
+          :key="i"
+          cols="6"
+          sm="4"
+          md="3"
+        >
+          <div class="analise-grid-item text-center">
+            <p class="text-subtitle-2 font-weight-bold mb-1">
+              {{ item.label }}
+              <a v-if="item.link" :href="item.link" target="_blank" rel="noopener noreferrer" class="ml-1">
+                <v-icon size="14" color="grey">mdi-wikipedia</v-icon>
+              </a>
+            </p>
+            <AnaliseViz :viz="item.viz" />
+          </div>
+        </v-col>
+      </v-row>
+    </div>
   </v-container>
 </template>
 

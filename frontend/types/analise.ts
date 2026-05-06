@@ -81,10 +81,18 @@ export interface VizCompiled extends VizSource {
   data: any
 }
 
+/** A grid item: a small viz card with a label and optional link */
+export interface GridItem {
+  label: string
+  link?: string
+  filters?: AnaliseFilters
+  viz: VizSource
+}
+
 /** A step in the source JSON (what you hand-edit) */
 export interface AnaliseStepSource {
   id: string
-  type: 'text' | 'split' | 'side-by-side'
+  type: 'text' | 'split' | 'side-by-side' | 'grid'
   title?: string
   text?: string
   /** For 'split': which side the viz goes on */
@@ -95,17 +103,27 @@ export interface AnaliseStepSource {
   viz?: VizSource
   /** For 'side-by-side': multiple vizzes */
   vizzes?: VizSource[]
+  /** For 'grid': items to display in a grid */
+  items?: GridItem[]
+}
+
+/** A compiled grid item */
+export interface GridItemCompiled {
+  label: string
+  link?: string
+  viz: VizCompiled
 }
 
 /** A step in the compiled JSON (with data baked in) */
 export interface AnaliseStepCompiled {
   id: string
-  type: 'text' | 'split' | 'side-by-side'
+  type: 'text' | 'split' | 'side-by-side' | 'grid'
   title?: string
   text?: string
   layout?: 'viz-left' | 'viz-right'
   viz?: VizCompiled
   vizzes?: VizCompiled[]
+  items?: GridItemCompiled[]
 }
 
 /** Source config (what you edit in public/analises/<id>.json) */
