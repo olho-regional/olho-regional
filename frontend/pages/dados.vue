@@ -210,7 +210,7 @@ const datasets = [
     description: 'Lista completa de publicações periódicas registadas em Portugal, ativas e inativas entre 2000 e 2026.',
     size: '1 MB',
     format: 'CSV',
-    downloadUrl: 'https://github.com/olho-regional/olho-regional/dados/erc-jornais-2026-04.csv',
+    downloadUrl: 'https://github.com/olho-regional/olho-regional/blob/main/dados/erc-jornais-2026-04.csv',
   },
   {
     name: 'Jornais regionais neste projeto',
@@ -224,7 +224,7 @@ const datasets = [
     description: 'Uma versão com todo a estrutura da nossa base de dados mas apenas um máximo de 10 notícias por jornal, útil para testes e compreender a estrutura.',
     size: '20 MB',
     format: 'SQLITE',
-    downloadUrl: 'https://github.com/olho-regional/olho-regional/dados/olho-regional-lite.db',
+    downloadUrl: 'https://github.com/olho-regional/olho-regional/blob/main/dados/olho-regional-lite.db',
   },
   {
     name: 'Base de dados - Completa',
