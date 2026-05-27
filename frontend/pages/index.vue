@@ -917,7 +917,8 @@ onBeforeUnmount(() => {
 .story__intro {
   max-width: 840px;
   margin: 0 auto;
-  padding: 5rem 2rem 14rem;
+  padding: 10rem 2rem 20rem;
+
   position: relative;
 }
 
