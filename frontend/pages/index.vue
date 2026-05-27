@@ -162,7 +162,7 @@
           </p>
         </div>
 
-        <div class="scroll-story__step" data-step="5">
+        <div class="scroll-story__step" data-step="5" style="margin-bottom:6rem;;">
           <h2 class="scroll-story__title">Desertos de notícias</h2>
           <p class="scroll-story__text">
             Se considerarmos apenas os jornais online <strong>atualmente ativos</strong>, surgem <strong>{{ desertCount
@@ -664,6 +664,10 @@ function setupStoryTriggers(container: HTMLElement, phaseRef: ReturnType<typeof 
   }
   phaseRef.value = initialPhase
 
+  // Guard: ignore ScrollTrigger callbacks during first refresh to avoid race conditions
+  let initialized = false
+  requestAnimationFrame(() => { initialized = true })
+
   // Now create triggers — they won't override the initial phase due to the guard
   steps.forEach((step) => {
     const stepNum = parseInt((step as HTMLElement).dataset.step || '0')
@@ -671,8 +675,8 @@ function setupStoryTriggers(container: HTMLElement, phaseRef: ReturnType<typeof 
       trigger: step,
       start: 'top 60%',
       end: 'bottom 40%',
-      onEnter: () => { phaseRef.value = stepNum },
-      onEnterBack: () => { phaseRef.value = stepNum },
+      onEnter: () => { if (initialized) phaseRef.value = stepNum },
+      onEnterBack: () => { if (initialized) phaseRef.value = stepNum },
     })
   })
   steps.forEach((step) => {
@@ -803,7 +807,9 @@ function onKeydownNav(e: KeyboardEvent) {
 
   if (target !== current) {
     e.preventDefault()
-    sections[target]!.scrollIntoView({ behavior: 'smooth' })
+    const el = sections[target]!
+    const isLast = target === sections.length - 1
+    el.scrollIntoView({ behavior: 'smooth', block: isLast ? 'center' : 'start' })
   }
 }
 
