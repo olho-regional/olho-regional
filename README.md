@@ -84,6 +84,32 @@ Cada pasta contém um notebook Jupyter (`.ipynb`) com o pipeline completo.
 
 </details>
 
+<details>
+<summary><strong>4. Construir a base de dados SQLite</strong></summary>
+
+O script `insert_data.py` agrega todos os dados recolhidos e análises numa única base de dados SQLite (`olho-regional.db`):
+
+```bash
+cd processamento/database/scripts
+pip install sqlite-utils
+python insert_data.py
+```
+
+O script executa 7 etapas sequenciais:
+1. Cria tabelas geográficas (distritos + municípios) a partir de `geo_data.json`
+2. Cria tabela de jornais a partir de `jornais.json`
+3. Insere artigos dos ficheiros `articles.jsonl` em `data-scraping/data/`
+4. Insere labels (tópicos) de `topic-detection/articles_topics.jsonl`
+5. Insere citações com género de `gender-analysis/output/quotes_with_gender.jsonl`
+6. Insere entidades (NER) de `entity-detection/output/entities.jsonl`
+7. Cria tabelas de resumo pré-agregadas para queries rápidas
+
+
+A base de dados resultante é escrita em `processamento/database/olho-regional.db`.
+
+</details>
+
+
 ## Autores
 
 João Carvalho e Miguel Ramalho
