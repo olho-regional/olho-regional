@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <h1 class="text-h4 mb-6">Dados e Curiosiades</h1>
+    <h1 class="text-h4 mb-6">Dados e Curiosidades</h1>
     <p class="mb-4">
       Nesta página encontram-se mais detalhes sobre o projeto, e links para acesso aos nossos dados completos.<br />
     </p>
