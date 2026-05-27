@@ -756,6 +756,57 @@ function setupScrollAnimations() {
 // ──────────────────────────────────────────────
 // LIFECYCLE
 // ──────────────────────────────────────────────
+// ──────────────────────────────────────────────
+// ARROW KEY SECTION NAVIGATION
+// ──────────────────────────────────────────────
+function getSections(): HTMLElement[] {
+  const story = canvasRef.value?.closest('.story')
+  if (!story) return []
+  const targets: HTMLElement[] = []
+  for (const section of Array.from(story.querySelectorAll(':scope > section')) as HTMLElement[]) {
+    const steps = section.querySelectorAll('.scroll-story__step')
+    if (steps.length) {
+      targets.push(...(Array.from(steps) as HTMLElement[]))
+    } else {
+      targets.push(section)
+    }
+  }
+  return targets
+}
+
+function getCurrentSectionIndex(sections: HTMLElement[]): number {
+  const scrollY = window.scrollY + window.innerHeight * 0.3
+  let current = 0
+  for (let i = 0; i < sections.length; i++) {
+    if (sections[i]!.offsetTop <= scrollY) current = i
+  }
+  return current
+}
+
+function onKeydownNav(e: KeyboardEvent) {
+  if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return
+  // Don't hijack when user is in an input/textarea
+  const tag = (e.target as HTMLElement)?.tagName
+  if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return
+
+  const sections = getSections()
+  if (!sections.length) return
+
+  const current = getCurrentSectionIndex(sections)
+  let target: number
+
+  if (e.key === 'ArrowRight') {
+    target = Math.min(current + 1, sections.length - 1)
+  } else {
+    target = Math.max(current - 1, 0)
+  }
+
+  if (target !== current) {
+    e.preventDefault()
+    sections[target]!.scrollIntoView({ behavior: 'smooth' })
+  }
+}
+
 let introObserver: IntersectionObserver | null = null
 let continueHintObserver: IntersectionObserver | null = null
 let continueHintTimer: ReturnType<typeof setTimeout> | null = null
@@ -764,6 +815,7 @@ let continueHintScrollHandler: (() => void) | null = null
 onMounted(() => {
   initFloatingNames(); resizeCanvas(); animate()
   window.addEventListener('resize', resizeCanvas)
+  window.addEventListener('keydown', onKeydownNav)
   nextTick(() => {
     setupScrollAnimations()
     startTableScroll()
@@ -819,6 +871,7 @@ onBeforeUnmount(() => {
   cancelAnimationFrame(animId)
   stopTableScroll()
   window.removeEventListener('resize', resizeCanvas)
+  window.removeEventListener('keydown', onKeydownNav)
   ScrollTrigger.getAll().forEach(t => t.kill())
   introObserver?.disconnect()
   continueHintObserver?.disconnect()
@@ -917,14 +970,14 @@ onBeforeUnmount(() => {
 .story__intro {
   max-width: 840px;
   margin: 0 auto;
-  padding: 10rem 2rem 20rem;
+  padding: 16rem 2rem 22rem;
 
   position: relative;
 }
 
 .story__continue-hint {
   position: absolute;
-  bottom: 4rem;
+  bottom: 8rem;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
